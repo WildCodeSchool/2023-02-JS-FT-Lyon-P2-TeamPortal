@@ -1,0 +1,21 @@
+header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 130px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+span#title {
+    color: deepskyblue;
+}
