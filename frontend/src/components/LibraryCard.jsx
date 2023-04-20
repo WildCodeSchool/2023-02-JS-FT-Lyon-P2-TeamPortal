@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Library.css";
 
 export default function LibraryCard({
   library: {
@@ -18,20 +19,22 @@ export default function LibraryCard({
 }) {
   return (
     <div className="librarycardcontainer">
-      <div className="librarytitle">
-        <h1>{title}</h1>
-      </div>
-      <div>
-        <h2>{doc1}</h2>
-        <h2>{doc2}</h2>
-        <h2>{doc3}</h2>
-        <h2>{doc4}</h2>
-        <h2>{doc5}</h2>
-        <h2>{doc6}</h2>
-        <h2>{doc7}</h2>
-        <h2>{doc8}</h2>
-        <h2>{doc9}</h2>
-        <h2>{doc10}</h2>
+      <div className="librarycardbox">
+        <div className="librarytitle">
+          <h1>{title}</h1>
+        </div>
+        <div>
+          <h2>{doc1}</h2>
+          <h2>{doc2}</h2>
+          <h2>{doc3}</h2>
+          <h2>{doc4}</h2>
+          <h2>{doc5}</h2>
+          <h2>{doc6}</h2>
+          <h2>{doc7}</h2>
+          <h2>{doc8}</h2>
+          <h2>{doc9}</h2>
+          <h2>{doc10}</h2>
+        </div>
       </div>
     </div>
   );
