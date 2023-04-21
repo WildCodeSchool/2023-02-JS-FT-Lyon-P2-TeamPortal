@@ -18,7 +18,6 @@ const NewsCard = () => {
   };
 
   useEffect(getNews, []);
-  console.log(news);
 
   const [newsIndex, setNewsIndex] = useState(0);
   const handlePrevious = () => {

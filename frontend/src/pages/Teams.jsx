@@ -1,9 +1,10 @@
 import React from 'react';
+import TeamList from '@components/teamList/TeamList';
 
 export default function Teams() {
   return (
-    <div>
-      <h1>Welcome to Teams page</h1>
+    <div className="background-image">
+      <TeamList />
     </div>
   );
 }
