@@ -1,9 +1,0 @@
-.librarycardcontainer{
-    
-    display: flex;
-}
-
-.librarycardbox{
-    display: flex;
-    justify-content: space-around;
-}

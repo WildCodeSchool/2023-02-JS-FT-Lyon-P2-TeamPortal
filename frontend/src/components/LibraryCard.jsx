@@ -1,46 +1,29 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./Library.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './LibraryCard.css';
+import { useState } from 'react';
 
-export default function LibraryCard({
-  library: {
-    title,
-    doc1,
-    doc2,
-    doc3,
-    doc4,
-    doc5,
-    doc6,
-    doc7,
-    doc8,
-    doc9,
-    doc10,
-  },
-}) {
+export default function LibraryCard({ title, docs }) {
+  const [isShown, setIsShown] = useState(false);
   return (
-    <div className="librarycardcontainer">
+    <div>
       <div className="librarycardbox">
-        <div className="librarytitle">
-          <h1>{title}</h1>
-        </div>
-        <div>
-          <h2>{doc1}</h2>
-          <h2>{doc2}</h2>
-          <h2>{doc3}</h2>
-          <h2>{doc4}</h2>
-          <h2>{doc5}</h2>
-          <h2>{doc6}</h2>
-          <h2>{doc7}</h2>
-          <h2>{doc8}</h2>
-          <h2>{doc9}</h2>
-          <h2>{doc10}</h2>
-        </div>
+        <button className="librarytitle" onClick={() => setIsShown(!isShown)}>
+          {title}
+        </button>
+        {isShown && (
+          <div className="documents">
+            {docs.map((doc) => (
+              <h2 key={doc}>{doc}</h2>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
 LibraryCard.propTypes = {
-  library: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  docs: PropTypes.arrayOf(PropTypes.string),
 };

@@ -1,0 +1,36 @@
+
+.librarytitle{
+    background-color:var(--main-bg-color);
+    width: 25vw;
+    height: 25vh;
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .1s;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    margin-right: 2em;
+    font-size: 1.2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+            }
+
+.librarytitle:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
+
+.documents h2{
+    background-color:var(--main-bg-color);
+    margin-top: 2rem;
+    width: 25vw;
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding-left: 0.4rem;
+
+}
