@@ -5,9 +5,9 @@ import Teams from './pages/Teams.jsx';
 import Library from './pages/Library.jsx';
 import Login from './pages/Login.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
-import Header from './components/Header/Header';
-import './App.css';
+import Header from './components/Header/Header.jsx';
 
+import './App.css';
 
 function App() {
   return (

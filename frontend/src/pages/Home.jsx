@@ -1,9 +1,12 @@
 import React from 'react';
+import NewsCard from '../components/NewsCard/NewsCard.jsx';
 
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to Home page</h1>
+      <div>
+        <NewsCard />
+      </div>
     </div>
   );
 }
