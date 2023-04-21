@@ -1,10 +1,5 @@
 body {
   text-align: center;
-  --main-bg-color: #5eb5d7;
-  --text-color: #bbfaf0;
-  --second-color: #84eded;
-  --light-color: #f3fffc;
-  --dark-color: #4365b3;
 }
 .navbar-container {
   display: flex;
