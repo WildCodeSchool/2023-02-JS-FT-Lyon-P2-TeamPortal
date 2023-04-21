@@ -4,6 +4,8 @@ import TeamCard from '../teamCard/TeamCard';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+const HERO_API_KEY = import.meta.env.VITE_HERO_API_KEY;
+
 const TeamList = () => {
   const [teamData, setTeamData] = useState([]);
   const [selectedRadio, setSelectedRadio] = useState('Everyone');
@@ -11,7 +13,7 @@ const TeamList = () => {
 
   useEffect(() => {
     axios
-      .get('https://www.superheroapi.com/api.php/1499957707203173/search/p')
+      .get(`https://www.superheroapi.com/api.php/${HERO_API_KEY}/search/p`)
       .then((response) => setTeamData(response.data.results));
   }, []);
 
