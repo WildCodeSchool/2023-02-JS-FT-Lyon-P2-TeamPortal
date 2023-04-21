@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+  transition: scale 0.8s;
+  scale: 1.1;
+}
+
+img:hover {
+  scale: 1.25;
+}
+
+.TeamCardImage {
+  padding: 20px auto;
+  margin: 0 auto 10px auto;
+  height: 190px;
+  width: 140px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: black solid 0.1rem;
+}
+
+.TeamCard {
+  background-color: rgb(203, 203, 203);
+  margin: 10px 20px;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  font-family: 'KoHo', sans-serif;
+  padding-top: 20px;
+  box-shadow: black 0px 0px 20px 0px;
+  transition: all 0.4s ease-out;
+}
+
+.TeamCard:hover {
+  box-shadow: rgb(0, 202, 229) 0px 0px 20px 5px;
+  transform: skew(1deg, 1deg);
+}
+
+.TeamCardName {
+  margin: 0px;
+  font-size: 1rem;
+}
+
+.TeamCardJob {
+  margin: 0px;
+  font-size: 1rem;
+  font-weight: 300;
+}

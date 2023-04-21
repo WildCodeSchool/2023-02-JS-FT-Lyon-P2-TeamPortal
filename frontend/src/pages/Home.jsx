@@ -3,7 +3,7 @@ import NewsCard from '../components/NewsCard/NewsCard.jsx';
 
 export default function Home() {
   return (
-    <div>
+    <div className="background-image">
       <div>
         <NewsCard />
       </div>

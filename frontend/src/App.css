@@ -80,6 +80,9 @@ select {
 body {
   background-image: url('./src/assets/p2background.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   color: #bbfaf0;
 }
 
