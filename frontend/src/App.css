@@ -93,3 +93,11 @@ body {
   --light-color: #f3fffc;
   --dark-color: #4365b3;
 }
+
+.containerlibrary{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto 0 375px;
+  right: 0;
+}
