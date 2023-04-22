@@ -84,6 +84,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   color: #bbfaf0;
+  font-family: Koho, sans-serif;
 }
 
 :root {
@@ -94,7 +95,7 @@ body {
   --dark-color: #4365b3;
 }
 
-.containerlibrary{
+.containerlibrary {
   display: flex;
   justify-content: space-around;
   width: 70%;
