@@ -30,36 +30,67 @@ const NewsCard = () => {
   if (news && news.urlToImage !== null) {
     return (
       <div className="news-card">
-        <button
-          onClick={handlePrevious}
-          disabled={newsIndex === 0 ? true : false}
-          className="news-arrow news-arrow-prev"
-        >
-          &#8249;
-        </button>
-        <div className="left-container">
-          <div className="image-container">
-            <img
-              src={news[newsIndex].urlToImage}
-              alt={news[newsIndex].title}
-              className="news-image"
-            />
-          </div>
-          <a href={news[newsIndex].url}>&#x203A;Read More</a>
+        <div className="image-container">
+          <img
+            src={news[newsIndex].urlToImage}
+            alt={news[newsIndex].title}
+            className="news-image"
+          />
         </div>
-        <div className="right-container">
+        <div className="bottom-container">
           <h3 className="news-title">{news[newsIndex].title}</h3>
           <p className="news-description">{news[newsIndex].description}</p>
-          <br />
-          <p>Author: {news[newsIndex].author}</p>
+          <p>{news[newsIndex].content}</p>
+          <p className="news-author">Author: {news[newsIndex].author}</p>
+          <p></p>
         </div>
-        <button
-          onClick={handleNext}
-          disabled={newsIndex === news.length - 1 ? true : false}
-          className="news-arrow news-arrow-next"
-        >
-          &#8250;
-        </button>
+        <div className="news-nav-container">
+          <div className="news-nav">
+            <button
+              onClick={handlePrevious}
+              disabled={newsIndex === 0 ? true : false}
+              className="news-arrow news-arrow-prev"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <a href={news[newsIndex].url} className="news-link">
+              Read More
+            </a>
+            <button
+              onClick={handleNext}
+              disabled={newsIndex === news.length - 1 ? true : false}
+              className="news-arrow news-arrow-next"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
