@@ -1,28 +1,28 @@
-import React from 'react';
-import LibraryList from '../components/LibraryList';
+import React from "react";
+import LibraryList from "../components/LibraryList/LibraryList";
 
 const libraries = [
   {
-    title: 'Infos RH',
-    docs: ['Réglement intérieur', 'Convention collective', 'Note de service'],
+    title: "Infos RH",
+    docs: ["Réglement intérieur", "Convention collective", "Note de service"],
   },
   {
-    title: 'Fiches de poste',
+    title: "Fiches de poste",
     docs: [
-      'Dev Front',
-      'Dev Back',
-      'Team Manager',
-      'UI/UX designer',
-      'Business manager',
-      'Chargé de clientèle',
-      'Responsable des achats',
+      "Dev Front",
+      "Dev Back",
+      "Team Manager",
+      "UI/UX designer",
+      "Business manager",
+      "Chargé de clientèle",
+      "Responsable des achats",
     ],
   },
   {
-    title: 'Infos pratiques',
+    title: "Infos pratiques",
     docs: [
       "Annuaire de l'entreprise",
-      'Demande de congés',
+      "Demande de congés",
       "Déclaration d'heures supplémentaires",
     ],
   },
@@ -30,12 +30,10 @@ const libraries = [
 
 export default function Library() {
   return (
-
     <div>
       <div className="Library">
         <LibraryList libraries={libraries} />
       </div>
-
     </div>
   );
 }

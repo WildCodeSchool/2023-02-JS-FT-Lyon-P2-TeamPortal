@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Titillium+Web:wght@300;400;700&family=Work+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Titillium+Web:wght@300;400;700&family=Work+Sans:wght@400;700&display=swap");
 
 /* Reset CSS Anday Bell */
 
@@ -24,8 +24,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -78,12 +78,13 @@ select {
 }
 
 body {
-  background-image: url('./src/assets/p2background.jpg');
+  background-image: url("./src/assets/p2background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   color: #bbfaf0;
+  font-family: Koho, sans-serif;
 }
 
 :root {
@@ -94,7 +95,7 @@ body {
   --dark-color: #4365b3;
 }
 
-.containerlibrary{
+.containerlibrary {
   display: flex;
   justify-content: space-around;
   width: 70%;

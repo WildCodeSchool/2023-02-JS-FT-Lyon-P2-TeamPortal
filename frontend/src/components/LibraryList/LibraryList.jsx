@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import LibraryCard from './LibraryCard';
+import React from "react";
+import PropTypes from "prop-types";
+import LibraryCard from "../LibraryCard/LibraryCard";
 
 export default function LibraryList({ libraries }) {
   return (
@@ -21,5 +21,5 @@ LibraryList.propTypes = {
       title: PropTypes.string.isRequired,
       docs: PropTypes.arrayOf(PropTypes.string).isRequired,
     })
-  ),
+  ).isRequired,
 };
