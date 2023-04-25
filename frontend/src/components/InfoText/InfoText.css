@@ -1,0 +1,26 @@
+.InfoText-container {
+  max-width: 80%;
+  display: block;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.InfoText {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  animation: defilement 20s infinite linear;
+}
+.InfoText p span {
+  color: var(--second-color);
+  padding-left: 5rem;
+}
+
+@keyframes defilement {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
