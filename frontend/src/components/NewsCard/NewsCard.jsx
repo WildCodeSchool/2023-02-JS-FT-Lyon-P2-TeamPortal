@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import PropTypes from 'prop-types';
-import './NewsCard.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import PropTypes from "prop-types";
+import ArrowPrev from "../../assets/arrowPrev";
+import ArrowNext from "../../assets/arrowNext";
+
+import "react-toastify/dist/ReactToastify.css";
+import "./NewsCard.css";
 
 const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
-const NewsCard = () => {
+function NewsCard() {
   const [news, setNews] = useState(null);
   const getNews = () => {
     axios
@@ -14,6 +18,9 @@ const NewsCard = () => {
       )
       .then((response) => {
         setNews(response.data.articles);
+      })
+      .catch((error) => {
+        alert(error.message);
       });
   };
 
@@ -30,40 +37,47 @@ const NewsCard = () => {
   if (news && news.urlToImage !== null) {
     return (
       <div className="news-card">
-        <button
-          onClick={handlePrevious}
-          disabled={newsIndex === 0 ? true : false}
-          className="news-arrow news-arrow-prev"
-        >
-          &#8249;
-        </button>
-        <div className="left-container">
-          <div className="image-container">
-            <img
-              src={news[newsIndex].urlToImage}
-              alt={news[newsIndex].title}
-              className="news-image"
-            />
-          </div>
-          <a href={news[newsIndex].url}>&#x203A;Read More</a>
+        <div className="image-container">
+          <img
+            src={news[newsIndex].urlToImage}
+            alt={news[newsIndex].title}
+            className="news-image"
+          />
         </div>
-        <div className="right-container">
+        <div className="bottom-container">
           <h3 className="news-title">{news[newsIndex].title}</h3>
           <p className="news-description">{news[newsIndex].description}</p>
-          <br />
-          <p>Author: {news[newsIndex].author}</p>
+          <p>{news[newsIndex].content}</p>
+          <p className="news-author">Author: {news[newsIndex].author}</p>
+          <p />
         </div>
-        <button
-          onClick={handleNext}
-          disabled={newsIndex === news.length - 1 ? true : false}
-          className="news-arrow news-arrow-next"
-        >
-          &#8250;
-        </button>
+        <div className="news-nav-container">
+          <div className="news-nav">
+            <button
+              type="button"
+              onClick={handlePrevious}
+              disabled={newsIndex === 0}
+              className="news-arrow news-arrow-prev"
+            >
+              <ArrowPrev />
+            </button>
+            <a href={news[newsIndex].url} className="news-link">
+              Read More
+            </a>
+            <button
+              type="button"
+              onClick={handleNext}
+              disabled={newsIndex === news.length - 1}
+              className="news-arrow news-arrow-next"
+            >
+              <ArrowNext />
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
-};
+}
 
 NewsCard.propTypes = {
   news: PropTypes.shape({
@@ -72,9 +86,7 @@ NewsCard.propTypes = {
     urlToImage: PropTypes.string,
     description: PropTypes.string,
     content: PropTypes.string,
-  }),
-  handlePrevious: PropTypes.func,
-  handleNext: PropTypes.func,
+  }).isRequired,
 };
 
 export default NewsCard;

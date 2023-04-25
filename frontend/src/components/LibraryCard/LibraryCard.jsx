@@ -1,14 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './LibraryCard.css';
-import { useState } from 'react';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import "./LibraryCard.css";
 
 export default function LibraryCard({ title, docs }) {
   const [isShown, setIsShown] = useState(false);
   return (
     <div>
       <div className="librarycardbox">
-        <button className="librarytitle" onClick={() => setIsShown(!isShown)}>
+        <button
+          type="button"
+          className="librarytitle"
+          onClick={() => setIsShown(!isShown)}
+        >
           {title}
         </button>
         {isShown && (
@@ -25,5 +28,5 @@ export default function LibraryCard({ title, docs }) {
 
 LibraryCard.propTypes = {
   title: PropTypes.string.isRequired,
-  docs: PropTypes.arrayOf(PropTypes.string),
+  docs: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
