@@ -61,7 +61,12 @@ function NewsCard() {
             >
               <ArrowPrev />
             </button>
-            <a href={news[newsIndex].url} className="news-link">
+            <a
+              href={news[newsIndex].url}
+              className="news-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               Read More
             </a>
             <button

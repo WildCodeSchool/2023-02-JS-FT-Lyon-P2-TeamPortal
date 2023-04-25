@@ -1,11 +1,9 @@
-body {
-  text-align: center;
-}
 .navbar-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
+  text-align: center;
   width: 4rem;
   top: 0;
   height: 100vh;
@@ -25,12 +23,21 @@ body {
   display: inline-block;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 3.5rem;
+}
 .nav ul {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-li a {
+.nav li a {
   color: var(--text-color);
   text-decoration: none;
   display: flex;
@@ -39,17 +46,17 @@ li a {
   transition: all 0.2s ease-in;
 }
 
-li a:hover {
+.nav li a:hover {
   color: var(--dark-color);
   transform: scale(1.2);
 }
 
-li {
+.nav li {
   list-style-type: none;
   padding-top: 2rem;
 }
 
-li h3 {
+.nav li h3 {
   display: none;
   padding-left: 0.5rem;
 }
