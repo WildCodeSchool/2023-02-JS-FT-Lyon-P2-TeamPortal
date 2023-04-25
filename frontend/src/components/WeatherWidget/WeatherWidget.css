@@ -1,17 +1,17 @@
 * {
-    color: black;
+    color: white;
 }
 
 .weather-widget-container {
     width: 300px;
     height: 300px;
-    background: #fff;
+    background: #263238;
     display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 1.2;
-    border: 2px solid orange;
+    border-radius: 20px;
     margin: 0 auto;
 }
 
@@ -60,9 +60,18 @@ span.max-temperature {
 
 .degrees {
     font-size: 3rem;
-    color: black;
+    color: white;
 }
 
 .center {
     text-align: center;
+}
+
+.day {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content {
+    color: orange;
 }

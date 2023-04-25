@@ -47,7 +47,7 @@ const TeamList = () => {
           {selectedRadio !== 'Everyone'
             ? teamData &&
               teamData
-                .filter((members) => whatIsTeam(members) == selectedRadio)
+                .filter((members) => whatIsTeam(members) === selectedRadio)
                 .map((members, index) => (
                   <li key={index}>
                     <TeamCard key={index} members={members} />
