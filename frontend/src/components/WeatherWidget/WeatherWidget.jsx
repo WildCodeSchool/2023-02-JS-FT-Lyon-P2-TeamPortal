@@ -53,7 +53,7 @@ export default function WeatherWidget() {
           <div className="top">
             <div className="day-date-location">
               <p className="day">Mardi</p>
-              <p className="date">25 avril 2023</p>
+              <p className="date">26 avril 2023</p>
               <p className="location">Lyon, FR</p>
             </div>
 
