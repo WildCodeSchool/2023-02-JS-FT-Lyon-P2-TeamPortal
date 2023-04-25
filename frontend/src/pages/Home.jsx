@@ -1,5 +1,5 @@
-import React from 'react';
-import NewsCard from '../components/NewsCard/NewsCard.jsx';
+import React from "react";
+import NewsCard from "../components/NewsCard/NewsCard";
 
 export default function Home() {
   return (

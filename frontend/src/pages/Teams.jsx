@@ -1,5 +1,5 @@
-import React from 'react';
-import TeamList from '@components/teamList/TeamList';
+import React from "react";
+import TeamList from "@components/teamList/TeamList";
 
 export default function Teams() {
   return (

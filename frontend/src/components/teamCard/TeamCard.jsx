@@ -1,13 +1,17 @@
-import React from 'react';
-import './TeamCard.css';
-import PropTypes from 'prop-types';
+import React from "react";
+import "./TeamCard.css";
+import PropTypes from "prop-types";
 
-const TeamCard = ({ members }) => {
+function TeamCard({ members }) {
   return (
     <div className="AllCards">
       <div className="TeamCard">
-        <div className="TeamCardImage">
-          <img src={members.image.url} alt={members.name}></img>
+        <div className="TeamCardImageContainer">
+          <img
+            src={members.image.url}
+            alt={members.name}
+            className="TeamCard-Image"
+          />
         </div>
         <div>
           <h1 className="TeamCardName">{members.name}</h1>
@@ -15,7 +19,7 @@ const TeamCard = ({ members }) => {
       </div>
     </div>
   );
-};
+}
 
 TeamCard.propTypes = {
   members: PropTypes.shape({
