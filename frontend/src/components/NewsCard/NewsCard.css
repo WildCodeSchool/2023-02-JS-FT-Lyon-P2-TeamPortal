@@ -1,14 +1,3 @@
-* {
-  --main-bg-color: #5eb5d7;
-  --text-color: #bbfaf0;
-  --second-color: #84eded;
-  --light-color: #f3fffc;
-  --dark-color: #4365b3;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .news-card {
   display: flex;
   flex-direction: column;
@@ -107,4 +96,12 @@
   background-color: var(--dark-color);
   color: white;
   border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .news-card {
+    width: auto;
+    height: auto;
+    margin: 2rem 2rem 4rem 2rem;
+  }
 }
