@@ -1,18 +1,17 @@
 .librarytitle {
   background-color: var(--main-bg-color);
   width: 25vw;
-  height: 25vh;
+  height: 15vh;
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.1s;
-  margin-top: 10rem;
+  margin-top: 7rem;
   margin-bottom: 2rem;
   margin-right: 2em;
-  font-size: 1.2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
 }
@@ -21,13 +20,27 @@
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.05);
+  color: var(--dark-color);
 }
 
-.documents h2 {
+.documents a {
   background-color: var(--main-bg-color);
   margin-top: 2rem;
   width: 25vw;
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
-  padding-left: 0.4rem;
+  transition: transform 0.1s;
+  padding: 0.8rem 0 1rem 0.8rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.documents a {
+  text-decoration: none;
+  color: white;
+}
+
+.documents a:hover {
+  background-color: var(--dark-color);
 }
