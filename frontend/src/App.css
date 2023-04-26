@@ -83,7 +83,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  color: #bbfaf0;
+  color: var(--text-color);
   font-family: Koho, sans-serif;
 }
 
@@ -98,8 +98,20 @@ body {
 .containerlibrary {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto 0;
-  right: 0;
-  flex-wrap: wrap;
+  align-items: center;
   margin-left: 10rem;
+  height: 100%;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

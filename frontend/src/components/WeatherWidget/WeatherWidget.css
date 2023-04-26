@@ -1,25 +1,23 @@
-* {
-  color: white;
-}
-
 .weather-widget-container {
-  width: 300px;
-  height: 300px;
+  width: 30vw;
+  height: 50vh;
   background: #263238;
   display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 1.2;
-  border-radius: 20px;
+  border-radius: 1rem;
   margin: 0 auto;
+  color: var(--text-color);
 }
 
 #current-weather {
-  width: 150px;
-  height: 150px;
-  margin-top: -15px;
-  margin-bottom: -15px;
+  width: 100%;
+  height: 100%;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  color: var(--text-color);
 }
 
 .top,
@@ -31,7 +29,7 @@
 
 .top div,
 .bottom div {
-  margin: 10px;
+  margin: 1rem;
 }
 
 .feels-like,
@@ -45,7 +43,7 @@
 
 p.label {
   font-weight: bold;
-  margin-right: 5px;
+  margin-right: 0.4rem;
 }
 
 p.content {
@@ -67,6 +65,7 @@ span.max-temperature {
 
 .center {
   text-align: center;
+  padding: 1rem;
 }
 
 .day {
@@ -76,4 +75,12 @@ span.max-temperature {
 
 .content {
   color: orange;
+}
+
+@media screen and (max-width: 1024px) {
+  .weather-widget-container {
+    width: auto;
+    height: auto;
+    margin: 2rem;
+  }
 }

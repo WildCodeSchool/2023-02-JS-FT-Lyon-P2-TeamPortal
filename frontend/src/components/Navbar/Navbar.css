@@ -37,6 +37,7 @@
   flex-direction: column;
   padding: 1rem;
 }
+
 .nav li a {
   color: var(--text-color);
   text-decoration: none;
@@ -86,7 +87,7 @@
   margin: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .navbar-container {
     position: fixed;
     bottom: 0;
