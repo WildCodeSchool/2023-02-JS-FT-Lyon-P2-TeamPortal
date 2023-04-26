@@ -1,26 +1,22 @@
 .librarytitle {
-  background-color: var(--main-bg-color);
-  width: 25vw;
-  height: 12vh;
+  background-color: var(--second-color);
+  width: 25vw; 
+  height: 12vh; 
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: transform 0.1s;
   margin-top: 7rem;
   margin-bottom: 2rem;
   margin-right: 2em;
   font-size: 1.8rem;
   font-weight: bold;
-  color: white;
+  color: var(--dark-color);
 }
 
 .librarytitle:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
+  -ms-transform: scale(1.5); /* IE 9  */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.05);
-  color: var(--dark-color);
 }
 
 .documents a {
@@ -37,37 +33,37 @@
   color: white;
 }
 
-
-
 .documents a:hover {
   background-color: var(--dark-color);
 }
 
-@media (max-width: 1500px){
+
+@media (max-width: 1024px) {
+  
+  .documents a{
+    font-size: 0.8rem;
+    width: 70vw;
+    height: 6vh;
+  }
+
   .librarytitle {
-    width: 20vw;
-    font-size: 1.5rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    width: 70vw;
+    height: 9vh;
+    font-size: 1.5rem;    
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 
-  .documents a{
-    width: 20vw;
-    font-size: 1rem;
-  }
-
-}
-
-@media (max-width: 1000px) {
-  .librarytitle{
-    font-size: 1.3rem;
-    width: 50vw;
-    height: 10vh;
-  }
-  .documents a{
-    font-size: 0.9rem;
-    width: 50vw;
-    height: 10vh;
+  .documents a:hover {
+    color: var(--light-color);
   }
 } 
+
+
+
 
 
 

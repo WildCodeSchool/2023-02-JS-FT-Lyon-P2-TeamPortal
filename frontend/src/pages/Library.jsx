@@ -69,7 +69,7 @@ const libraries = [
       },
       {
         file: "formulaire_heures_supplementaires.pdf",
-        title: "Déclaration d'heures supplémentaires",
+        title: "Heures supplémentaires",
       },
     ],
   },
