@@ -53,7 +53,6 @@ function TeamList() {
                 .map((members) => (
                   <li key={members.name}>
                     <TeamCard members={members} />
-
                   </li>
                 ))
             : teamData &&

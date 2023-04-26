@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import ArrowPrev from "../../assets/arrowPrev";
 import ArrowNext from "../../assets/arrowNext";
 
-import "react-toastify/dist/ReactToastify.css";
 import "./NewsCard.css";
 
 const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
