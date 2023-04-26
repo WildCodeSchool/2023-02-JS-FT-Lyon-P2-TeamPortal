@@ -44,7 +44,6 @@ export default function WeatherWidget() {
       })
       .catch((error) => console.error(error));
   }, []);
-
   return (
     <div className="weather-widget-container">
       {data ? (
