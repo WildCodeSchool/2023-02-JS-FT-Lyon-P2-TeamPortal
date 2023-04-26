@@ -103,3 +103,13 @@ body {
   flex-wrap: wrap;
   margin-left: 10rem;
 }
+
+@media (max-width: 1000px) {
+  .containerlibrary{  
+ flex-direction: column;
+ justify-content: center;
+ margin: 0;
+ 
+}
+}
+

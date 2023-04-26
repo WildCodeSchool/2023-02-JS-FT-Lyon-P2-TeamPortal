@@ -1,7 +1,7 @@
 .librarytitle {
   background-color: var(--main-bg-color);
   width: 25vw;
-  height: 15vh;
+  height: 12vh;
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   display: flex;
@@ -11,7 +11,7 @@
   margin-top: 7rem;
   margin-bottom: 2rem;
   margin-right: 2em;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: white;
 }
@@ -31,16 +31,43 @@
   border-radius: 0.5rem;
   transition: transform 0.1s;
   padding: 0.8rem 0 1rem 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
-  flex-direction: column;
-}
-
-.documents a {
   text-decoration: none;
   color: white;
 }
 
+
+
 .documents a:hover {
   background-color: var(--dark-color);
 }
+
+@media (max-width: 1500px){
+  .librarytitle {
+    width: 20vw;
+    font-size: 1.5rem;
+  }
+
+  .documents a{
+    width: 20vw;
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .librarytitle{
+    font-size: 1.3rem;
+    width: 50vw;
+    height: 10vh;
+  }
+  .documents a{
+    font-size: 0.9rem;
+    width: 50vw;
+    height: 10vh;
+  }
+} 
+
+
+
