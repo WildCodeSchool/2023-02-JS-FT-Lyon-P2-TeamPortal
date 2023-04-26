@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import LibraryCard from "../components/LibraryCard/LibraryCard";
 
 const libraries = [
@@ -68,7 +69,7 @@ const libraries = [
       },
       {
         file: "formulaire_heures_supplementaires.pdf",
-        title: "Déclaration d'heures supplémentaires",
+        title: "Heures supplémentaires",
       },
     ],
   },
