@@ -40,11 +40,10 @@ export default function WeatherWidget() {
       .then((response) => response.json())
       .then((weatherData) => {
         setData(weatherData);
-        console.log(weatherData);
+        // console.log(weatherData);
       })
       .catch((error) => console.error(error));
   }, []);
-  
   return (
     <div className="weather-widget-container">
       {data ? (
