@@ -3,8 +3,8 @@ import "./InfoText.css";
 
 function InfoText() {
   return (
-    <div className="InfoText-container">
-      <div className="InfoText">
+    <div className="infoText-container">
+      <div className="infoText">
         <p>
           <span>Annonces de la direction :</span> Les mises à jour importantes,
           les changements de personnel, les nouvelles initiatives ou les

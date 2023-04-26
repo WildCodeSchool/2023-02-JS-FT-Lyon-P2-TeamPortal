@@ -1,4 +1,4 @@
-.InfoText-container {
+.infoText-container {
   max-width: 80%;
   display: block;
   margin: 1rem;
@@ -6,12 +6,12 @@
   border-radius: 1rem;
 }
 
-.InfoText {
+.infoText {
   font-size: 1.2rem;
   color: var(--light-color);
   animation: defilement 20s infinite linear;
 }
-.InfoText p span {
+.infoText p span {
   color: var(--second-color);
   padding-left: 5rem;
 }
