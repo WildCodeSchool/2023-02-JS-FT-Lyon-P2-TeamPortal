@@ -11,6 +11,13 @@ export default function Navbar() {
   return (
     <div className="navbar-container">
       <div className="nav">
+        <div className="logo-container">
+          <img
+            src="../src/assets/teamportal-logo-title.png"
+            alt="logo"
+            className="logo"
+          />
+        </div>
         <nav>
           <ul>
             <li>
