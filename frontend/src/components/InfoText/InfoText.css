@@ -9,7 +9,7 @@
 .InfoText {
   font-size: 1.2rem;
   color: var(--light-color);
-  animation: defilement 20s infinite linear;
+  animation: defilement 25s infinite linear;
 }
 .InfoText p span {
   color: var(--second-color);
