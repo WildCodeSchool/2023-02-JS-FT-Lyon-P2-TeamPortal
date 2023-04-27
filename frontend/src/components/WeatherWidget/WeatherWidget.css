@@ -2,6 +2,8 @@
   width: 30vw;
   height: 50vh;
   background: #263238;
+  border: 1px solid var(--dark-color);
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
   display: grid;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +12,10 @@
   border-radius: 1rem;
   margin: 1rem auto;
   color: var(--text-color);
+}
+
+.weather-widget-container:hover {
+  border: 1px solid var(--main-bg-color);
 }
 
 #current-weather {
@@ -77,9 +83,9 @@ span.max-temperature {
   color: orange;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 600px) {
   .weather-widget-container {
-    width: auto;
+    width: 80%;
     height: auto;
     margin: 2rem;
   }

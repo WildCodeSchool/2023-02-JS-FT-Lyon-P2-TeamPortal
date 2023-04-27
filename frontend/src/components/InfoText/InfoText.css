@@ -24,3 +24,9 @@
     margin-left: -100%;
   }
 }
+
+@media (max-width: 600px) {
+  .infoText-container {
+    max-width: 90%;
+  }
+}
