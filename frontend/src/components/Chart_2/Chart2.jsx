@@ -8,7 +8,6 @@ const data = {
   labels: ["Dev", "Design", "Buisness"],
   datasets: [
     {
-      label: "CA par secteur",
       data: [55, 25, 20],
       backgroundColor: [
         "rgb(255, 99, 132)",
@@ -22,7 +21,8 @@ const data = {
 
 export default function Chart2() {
   return (
-    <div className="Chart2-container">
+    <div className="chart2-container">
+      <p>Effectif des salariés</p>
       <Doughnut data={data} />
     </div>
   );

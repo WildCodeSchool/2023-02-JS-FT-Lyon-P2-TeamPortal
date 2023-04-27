@@ -1,8 +1,15 @@
 .chart2-container{
-
-    margin: 0 auto;
-    flex: 1 0 50%; 
-    height: 30vh;
-    width: vh;
+    margin: 1rem auto;
+    width: 30vh;
     background-color: white;
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    border: 1px solid var(--dark-color);
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .chart2-container p {
+    color: black;
+    text-align: center;
   }
