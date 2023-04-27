@@ -6,7 +6,7 @@ function CardModal({ member }) {
   return (
     <div className="modal-container">
       <img className="imgModal" src={member.image.url} alt={member.name} />
-      <div className="modalBox">
+      <div className="modal-box">
         <h1 className="member-title">{member.name}</h1>
         <p className="job-title">Développeur Front-End</p>
         <p className="gender">{member.appearance.gender}</p>
