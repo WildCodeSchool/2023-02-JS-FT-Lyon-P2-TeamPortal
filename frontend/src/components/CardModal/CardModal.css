@@ -12,13 +12,13 @@
 
 .member-title {
   color: turquoise;
-  font-size: 5rem;
+  font-size: 3rem;
   padding: 30px;
 }
 
 .modal-container img {
-  height: 650px;
-  width: 500px;
+  height: 480px;
+  width: 350px;
   border-radius: 20px;
 }
 
@@ -28,20 +28,20 @@
   margin-bottom: 20px;
 }
 
-.gender {
+.gender-text {
   font-size: 1.4rem;
 }
 
-.appearance {
+.appearance-text {
   font-size: 1.4rem;
   margin-bottom: 30px;
 }
 
-.occupation {
+.occupation-text {
   font-size: 2rem;
   margin-bottom: 50px;
 }
 
-.base {
+.base-text {
   font-size: 2rem;
 }

@@ -56,7 +56,7 @@ input[type="radio"]:checked:after {
   border: 2px solid white;
 }
 
-.greatTeamMembers {
+.great-team-members {
   padding: 5px 5px;
   list-style-type: none;
 }
@@ -77,7 +77,7 @@ input[type="radio"]:checked:after {
   height: 150px;
 }
 
-.smallTeamMembers ul {
+.small-team-members ul {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -88,7 +88,7 @@ input[type="radio"]:checked:after {
   margin: 0 auto;
 }
 
-.greatTeamMembers ul {
+.great-team-members ul {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -121,10 +121,10 @@ input[type="radio"]:checked:after {
 }
 
 .member-button {
-border: solid black 0px;
-background-color: #00000000;
-width: 220px;
-margin: 10px;
+  border: solid black 0px;
+  background-color: #00000000;
+  width: 220px;
+  margin: 10px;
 }
 
 /* -------------------------   MODAL  -------------------------------- */

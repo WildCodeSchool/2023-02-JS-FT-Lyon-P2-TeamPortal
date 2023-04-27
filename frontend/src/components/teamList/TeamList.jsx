@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./TeamList.css";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 import TeamCard from "../teamCard/TeamCard";
 import TeamDevData from "../teamData/TeamDevData";
 import TeamDesignData from "../teamData/TeamDesignData";
@@ -16,6 +17,7 @@ export default function TeamList() {
   const [show, setShow] = useState(false);
   const [modal, setModal] = useState(false);
   const [memberIndex, setMemberIndex] = useState(0);
+  const notify = () => toast.error("Sorry, something's wrong !");
 
   const toggleModal = () => {
     setModal(!modal);
@@ -36,7 +38,7 @@ export default function TeamList() {
       .get(`https://www.superheroapi.com/api.php/${HERO_API_KEY}/search/w`)
       .then((response) => setTeamData(response.data.results))
       .catch((error) => {
-        alert(error.message);
+        notify(error.message);
       });
   }, []);
 
@@ -102,7 +104,7 @@ export default function TeamList() {
       )}
       {show ? whatIsTeamData() : ""}
 
-      <div className={show ? "smallTeamMembers" : "greatTeamMembers"}>
+      <div className={show ? "small-team-members" : "great-team-members"}>
         {teamData &&
           teamData
             .filter((members) => whatIsTeam(members) === selectedRadio)
@@ -137,6 +139,20 @@ export default function TeamList() {
           </div>
         </div>
       )}
+      <div>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
+      </div>
     </div>
   );
 }

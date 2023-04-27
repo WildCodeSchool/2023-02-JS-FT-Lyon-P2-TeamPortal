@@ -5,16 +5,16 @@ import "./CardModal.css";
 function CardModal({ member }) {
   return (
     <div className="modal-container">
-      <img className="imgModal" src={member.image.url} alt={member.name} />
+      <img className="img-modal" src={member.image.url} alt={member.name} />
       <div className="modal-box">
         <h1 className="member-title">{member.name}</h1>
         <p className="job-title">Développeur Front-End</p>
-        <p className="gender">{member.appearance.gender}</p>
-        <p className="appearance">
+        <p className="gender-text">{member.appearance.gender}</p>
+        <p className="appearance-text">
           {member.appearance.height[1]} , {member.appearance.weight[1]}
         </p>
-        <p className="occupation">Occupation : {member.work.occupation}</p>
-        <p className="base">Base : {member.work.base}</p>
+        <p className="occupation-text">Occupation : {member.work.occupation}</p>
+        <p className="base-text">Base : {member.work.base}</p>
       </div>
     </div>
   );
