@@ -5,7 +5,7 @@
   margin: 20px;
 }
 
-.modalBox {
+.modal-box {
   width: 100%;
   padding: 30px;
 }
@@ -16,7 +16,7 @@
   padding: 30px;
 }
 
-.modalContainer img {
+.modal-container img {
   height: 650px;
   width: 500px;
   border-radius: 20px;
