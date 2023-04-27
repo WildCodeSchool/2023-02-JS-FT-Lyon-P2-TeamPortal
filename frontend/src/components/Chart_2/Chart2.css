@@ -1,0 +1,8 @@
+.chart2-container{
+
+    margin: 0 auto;
+    flex: 1 0 50%; 
+    height: 30vh;
+    width: vh;
+    background-color: white;
+  }
