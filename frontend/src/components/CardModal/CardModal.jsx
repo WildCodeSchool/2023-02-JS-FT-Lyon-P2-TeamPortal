@@ -4,7 +4,7 @@ import "./CardModal.css";
 
 function CardModal({ member }) {
   return (
-    <div className="modalContainer">
+    <div className="modal-container">
       <img className="imgModal" src={member.image.url} alt={member.name} />
       <div className="modalBox">
         <h1 className="member-title">{member.name}</h1>
