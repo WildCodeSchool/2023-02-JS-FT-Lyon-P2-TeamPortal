@@ -4,17 +4,17 @@ import PropTypes from "prop-types";
 
 function TeamCard({ members }) {
   return (
-    <div className="AllCards">
-      <div className="TeamCard">
-        <div className="TeamCardImageContainer">
+    <div className="all-cards">
+      <div className="team-card">
+        <div className="team-card-image-container">
           <img
             src={members.image.url}
             alt={members.name}
-            className="TeamCard-Image"
+            className="team-card-image"
           />
         </div>
         <div>
-          <h1 className="TeamCardName">{members.name}</h1>
+          <h1 className="team-card-name">{members.name}</h1>
         </div>
       </div>
     </div>
