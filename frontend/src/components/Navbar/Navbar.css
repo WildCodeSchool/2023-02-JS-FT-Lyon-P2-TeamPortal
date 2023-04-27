@@ -87,7 +87,7 @@
   margin: 0.5rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .navbar-container {
     position: fixed;
     bottom: 0;
