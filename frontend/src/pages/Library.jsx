@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
 
 import LibraryCard from "../components/LibraryCard/LibraryCard";
 
@@ -77,6 +79,8 @@ const libraries = [
 export default function Library() {
   return (
     <div>
+      <Header />
+      <Navbar />
       <div className="containerlibrary">
         {libraries.map((library) => (
           <LibraryCard

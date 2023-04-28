@@ -4,16 +4,12 @@ import Home from "./pages/Home";
 import Teams from "./pages/Teams";
 import Library from "./pages/Library";
 import Login from "./pages/Login";
-import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/teams" element={<Teams />} />
