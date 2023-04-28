@@ -1,0 +1,47 @@
+.modal-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 20px;
+}
+
+.modal-box {
+  width: 100%;
+  padding: 30px;
+}
+
+.member-title {
+  color: turquoise;
+  font-size: 3rem;
+  padding: 30px;
+}
+
+.modal-container img {
+  height: 480px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.job-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gender-text {
+  font-size: 1.4rem;
+}
+
+.appearance-text {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.occupation-text {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.base-text {
+  font-size: 2rem;
+}

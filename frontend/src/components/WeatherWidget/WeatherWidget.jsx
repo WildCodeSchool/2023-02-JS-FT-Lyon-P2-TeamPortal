@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
 import "./WeatherWidget.css";
 
 export default function WeatherWidget() {
   const url = `https://api.open-meteo.com/v1/dwd-icon?latitude=45.75&longitude=4.85&hourly=relativehumidity_2m&hourly=apparent_temperature,surface_pressure,windspeed_10m&daily=temperature_2m_max,temperature_2m_min&current_weather=true&timezone=auto&past_days=1`;
+  const notify = () => toast.error("Sorry, no access to weather !");
 
   const weatherCodes = {
     0: "clear sky",
@@ -40,9 +42,8 @@ export default function WeatherWidget() {
       .then((response) => response.json())
       .then((weatherData) => {
         setData(weatherData);
-        // console.log(weatherData);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => notify(error.message));
   }, []);
   return (
     <div className="weather-widget-container">
@@ -118,6 +119,20 @@ export default function WeatherWidget() {
       ) : (
         <p>Loading...</p>
       )}
+      <div>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
+      </div>
     </div>
   );
 }
