@@ -9,14 +9,16 @@ header {
   justify-content: space-around;
   align-items: center;
   opacity: 50%;
+  position: relative;
+  top: 0;
 }
 
-h1 {
+header h1 {
   font-size: 2rem;
   text-align: center;
   color: white;
 }
 
-span#title {
+header span#title {
   color: deepskyblue;
 }
