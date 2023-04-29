@@ -1,4 +1,5 @@
 import React from "react";
+import "./Chart3.css";
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -9,7 +10,6 @@ import {
   Legend,
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
-import "./Chart3.css";
 
 ChartJS.register(
   RadialLinearScale,
