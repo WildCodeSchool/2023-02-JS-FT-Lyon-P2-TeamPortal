@@ -1,16 +1,28 @@
 import { Route, Routes } from "react-router-dom";
 import React from "react";
+import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import Teams from "./pages/Teams";
 import Library from "./pages/Library";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
+import Loader from "./components/Loader/Loader";
 
 import "./App.css";
 
 function App() {
-  return (
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 2000);
+  }, []);
+
+  return loader ? (
+    <Loader />
+  ) : (
     <div className="App">
       <Header />
       <Navbar />
