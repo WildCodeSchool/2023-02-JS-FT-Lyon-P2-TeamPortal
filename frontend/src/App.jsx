@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import Teams from "./pages/Teams";
 import Library from "./pages/Library";
@@ -17,7 +16,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 4000);
   }, []);
 
   return loader ? (

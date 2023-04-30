@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import TeamList from "../components/teamList/TeamList";
 import Loader from "../components/Loader/Loader";
 
