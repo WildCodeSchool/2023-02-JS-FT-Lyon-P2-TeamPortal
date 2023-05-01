@@ -21,7 +21,7 @@ export default function Navbar() {
         <nav>
           <ul>
             <li>
-              <NavLink to="/">
+              <NavLink to="/home">
                 <HomeIcon />
                 <h3>Home</h3>
               </NavLink>
@@ -42,7 +42,7 @@ export default function Navbar() {
         </nav>
       </div>
       <div className="login">
-        <NavLink to="/login">
+        <NavLink to="/">
           <LoginIcon />
           <h3>Login</h3>
         </NavLink>
