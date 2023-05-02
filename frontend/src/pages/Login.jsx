@@ -1,9 +1,19 @@
 import React from "react";
+import LoginBox from "../components/LoginBox/LoginBox";
 
 export default function Login() {
   return (
-    <div className="background-image">
-      <h1>Welcome to Login page</h1>
-    </div>
+    <>
+      <header className="login-header">
+        <h1>
+          Team<span id="title">Portal</span>
+        </h1>
+      </header>
+      <div className="login-container">
+        <div className="login-box">
+          <LoginBox />
+        </div>
+      </div>
+    </>
   );
 }
