@@ -10,11 +10,11 @@ import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
-  const memorizedUser = useMemo(() => ({ user, setUser }), [user, setUser]);
+  const memoizedUser = useMemo(() => ({ user, setUser }), [user, setUser]);
 
   return (
     <div className="App">
-      <UserContext.Provider value={memorizedUser}>
+      <UserContext.Provider value={memoizedUser}>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
