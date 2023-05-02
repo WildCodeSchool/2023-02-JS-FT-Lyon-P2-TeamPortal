@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "./WeatherWidget.css";
 
 export default function WeatherWidget() {
-  const url = `https://api.open-meteo.com/v1/dwd-icon?latitude=45.75&longitude=4.85&hourly=relativehumidity_2m&hourly=apparent_temperature,surface_pressure,windspeed_10m&daily=temperature_2m_max,temperature_2m_min&current_weather=true&timezone=auto&past_days=1`;
+  const url = `https://api.open-meteo.com/v1/dwd-icon?latitude=45.764043&longitude=4.835659&hourly=relativehumidity_2m&hourly=apparent_temperature,surface_pressure,windspeed_10m&daily=temperature_2m_max,temperature_2m_min&current_weather=true&timezone=auto&past_days=1`;
   const notify = () => toast.error("Sorry, no access to weather !");
 
   const weatherCodes = {

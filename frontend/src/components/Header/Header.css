@@ -1,16 +1,21 @@
 header {
   box-sizing: border-box;
+  max-width: 100%;
   margin: 0;
   padding: 0;
-  height: 7rem;
+  height: 8rem;
   background: black;
   display: flex;
+  text-align: center;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   opacity: 50%;
   position: relative;
   top: 0;
+}
+.header-top {
+  max-width: 80%;
+  display: block;
 }
 
 header h1 {
@@ -19,6 +24,6 @@ header h1 {
   color: white;
 }
 
-header span#title {
+header span#header-title {
   color: deepskyblue;
 }
