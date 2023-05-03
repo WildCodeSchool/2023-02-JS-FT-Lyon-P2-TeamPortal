@@ -7,21 +7,21 @@
   background-color: #333131;
 }
 
-input,
+.Input input,
 button {
   height: 45px;
   font-size: 1rem;
   border-radius: 10px;
 }
 
-input {
+.Input input {
   width: 70%;
   padding: 15px 10px;
   border: none;
   outline: none;
 }
 
-button {
+.Input button {
   padding: 15px 8px;
   display: flex;
   align-items: center;
@@ -33,6 +33,6 @@ button {
   outline: none;
 }
 
-button:hover {
+.Input button:hover {
   cursor: pointer;
 }
