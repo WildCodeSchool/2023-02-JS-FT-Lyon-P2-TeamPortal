@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
-
 import LibraryCard from "../components/LibraryCard/LibraryCard";
 
 const libraries = [
@@ -44,7 +43,7 @@ const libraries = [
         title: "UI/UX designer",
       },
       {
-        file: "modele_reglement_intérieur.pdf",
+        file: "manager_activite.pdf",
         title: "Business manager",
       },
       {
@@ -62,7 +61,7 @@ const libraries = [
     title: "Infos pratiques",
     docs: [
       {
-        file: "modele_reglement_intérieur.pdf",
+        file: "annuaire.pdf",
         title: "Annuaire de l'entreprise",
       },
       {

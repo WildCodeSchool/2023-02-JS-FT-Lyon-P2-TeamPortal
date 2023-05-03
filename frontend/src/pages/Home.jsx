@@ -1,4 +1,3 @@
-import React from "react";
 import WeatherWidget from "../components/WeatherWidget/WeatherWidget";
 import NewsCard from "../components/NewsCard/NewsCard";
 import Chart1 from "../components/Chart1/Chart1";
