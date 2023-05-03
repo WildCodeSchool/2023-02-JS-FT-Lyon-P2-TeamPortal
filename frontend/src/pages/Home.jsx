@@ -15,7 +15,6 @@ export default function Home() {
         <div className="left-home-container">
           <ChartGroup />
           <WeatherWidget />
-          <Messenger />
         </div>
         <div className="right-home-container">
           <NewsCard />
