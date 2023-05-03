@@ -4,6 +4,7 @@ import NewsCard from "../components/NewsCard/NewsCard";
 import ChartGroup from "../components/ChartGroup/ChartGroup";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
+import Messenger from "../components/Messenger/Messenger";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <div className="left-home-container">
           <ChartGroup />
           <WeatherWidget />
+          <Messenger />
         </div>
         <div className="right-home-container">
           <NewsCard />
