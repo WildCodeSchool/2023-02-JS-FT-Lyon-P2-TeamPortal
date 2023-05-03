@@ -8,22 +8,16 @@ import TeamDesignData from "../teamData/TeamDesignData";
 import TeamBusinessData from "../teamData/TeamBusinessData";
 import CardModal from "../CardModal/CardModal";
 
-const HERO_API_KEY = import.meta.env.VITE_HERO_API_KEY;
-
+const radios = ["Everyone", "Team DEV", "Team Design", "Team Business"];
 export default function TeamList() {
   const [teamData, setTeamData] = useState([]);
   const [selectedRadio, setSelectedRadio] = useState("Everyone");
-  const radios = ["Everyone", "Team DEV", "Team Design", "Team Business"];
+
   const [show, setShow] = useState(false);
-  const [modal, setModal] = useState(false);
-  const [memberIndex, setMemberIndex] = useState(0);
+  const [memberIndex, setMemberIndex] = useState(null);
   const notify = () => toast.error("Sorry, something's wrong !");
 
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if (modal) {
+  if (memberIndex) {
     document.body.classList.add("active-modal");
   } else {
     document.body.classList.remove("active-modal");
@@ -35,7 +29,7 @@ export default function TeamList() {
 
   useEffect(() => {
     axios
-      .get(`https://www.superheroapi.com/api.php/${HERO_API_KEY}/search/w`)
+      .get(`https://randomuser.me/api/?page=3&results=30&seed=abc&nat=fr`)
       .then((response) => setTeamData(response.data.results))
       .catch((error) => {
         notify(error.message);
@@ -46,13 +40,13 @@ export default function TeamList() {
     if (selectedRadio === "Everyone") {
       return "Everyone";
     }
-    if (parseInt(member.powerstats.intelligence, 10) > 70) {
+    if (parseInt(member.registered.age, 10) <= 8) {
       return "Team DEV";
     }
-    if (parseInt(member.powerstats.strength, 10) > 30) {
+    if (parseInt(member.registered.age, 10) <= 15) {
       return "Team Design";
     }
-    if (parseInt(member.powerstats.speed, 10) > 20) {
+    if (parseInt(member.registered.age, 10) > 15) {
       return "Team Business";
     }
     return null;
@@ -70,15 +64,9 @@ export default function TeamList() {
     }
     return null;
   };
-
-  const getMemberByIndex = (index) => {
-    // console.log(`l'index est de ${index}`);
-    setMemberIndex(index);
-    setModal(true);
-  };
-
-  // console.log(`member index est égal à ${memberIndex}`);
-
+  const filteredUsers = teamData.filter(
+    (members) => whatIsTeam(members) === selectedRadio
+  );
   return (
     <div className="TeamList">
       <ul className="radio-container">
@@ -105,33 +93,30 @@ export default function TeamList() {
       {show ? whatIsTeamData() : ""}
 
       <div className={show ? "small-team-members" : "great-team-members"}>
-        {teamData &&
-          teamData
-            .filter((members) => whatIsTeam(members) === selectedRadio)
-            .map((members, index) => (
-              <button
-                className="member-button"
-                type="button"
-                key={members.id}
-                onClick={() => getMemberByIndex(index)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") getMemberByIndex(index);
-                }}
-              >
-                <TeamCard members={members} />
-              </button>
-            ))}
+        {filteredUsers.map((members, index) => (
+          <button
+            className="member-button"
+            type="button"
+            key={members.location.street.number}
+            onClick={() => setMemberIndex(index)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") setMemberIndex(index);
+            }}
+          >
+            <TeamCard members={members} />
+          </button>
+        ))}
       </div>
 
-      {modal && (
+      {memberIndex != null && (
         <div className="modal">
           <div className="overlay">
             <div className="modal-content">
-              <CardModal member={teamData[memberIndex]} />
+              <CardModal member={filteredUsers[memberIndex]} />
               <button
                 type="button"
                 className="close-modal"
-                onClick={toggleModal}
+                onClick={() => setMemberIndex(null)}
               >
                 CLOSE
               </button>

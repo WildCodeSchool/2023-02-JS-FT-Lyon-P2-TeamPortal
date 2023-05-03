@@ -88,16 +88,6 @@ input[type="radio"]:checked:after {
   margin: 0 auto;
 }
 
-.great-team-members ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  margin: 0;
-}
 
 .btn-toggle {
   border-radius: 20px;
@@ -162,6 +152,7 @@ body.active-modal {
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: #393939;
+  border: solid white 4px;
   padding: 30px 28px;
   border-radius: 20px;
   height: 80vh;
