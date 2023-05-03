@@ -1,3 +1,4 @@
+import LogoTP from "../../assets/LogoTP";
 import "./Loader.css";
 
 export default function Loader() {
@@ -7,11 +8,9 @@ export default function Loader() {
         <div className="loader-logo-container" />
         <div className="loader-logo-container1" />
         <div className="loader-logo-container2" />
-        <img
-          src="../src/assets/teamportal-logo.png"
-          alt="logo"
-          className="loader-logo"
-        />
+        <div className="logo-test">
+          <LogoTP />
+        </div>
       </div>
     </div>
   );

@@ -12,11 +12,11 @@ import Loader from "./components/Loader/Loader";
 function App() {
   const [loader, setLoader] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoader(false);
+  //   }, 8000);
+  // }, []);
 
   const [user, setUser] = useState(null);
   const memoizedUser = useMemo(() => ({ user, setUser }), [user, setUser]);
@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 15000);
   }, []);
 
   return loader ? (

@@ -6,7 +6,7 @@ export default function Login() {
     <>
       <header className="login-header">
         <h1>
-          Team<span id="title">Portal</span>
+          Team<span id="header-title">Portal</span>
         </h1>
       </header>
       <div className="login-container">
