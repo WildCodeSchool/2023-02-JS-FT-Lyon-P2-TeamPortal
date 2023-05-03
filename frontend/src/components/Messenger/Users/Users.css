@@ -10,7 +10,7 @@
   overflow-y: auto;
 }
 
-ol li {
+.Users ol li {
   margin-bottom: 8px;
 }
 
