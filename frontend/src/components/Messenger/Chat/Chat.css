@@ -7,3 +7,6 @@
   padding: 15px;
   width: 350px;
 }
+
+@media (max-width: 600px) {
+}
