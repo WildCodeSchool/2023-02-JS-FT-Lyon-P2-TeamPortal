@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Users.css";
-import usersList from "../assets/usersList.js";
+import usersList from "../assets/usersList";
 
-const Users = () => {
+function Users() {
   const [showNameStatus, setShowNameStatus] = useState(true);
 
   return (
@@ -13,6 +13,7 @@ const Users = () => {
             src={user.picture}
             alt="avatar.jpg"
             className="avatar"
+            role="presentation"
             onClick={() => setShowNameStatus(!showNameStatus)}
           />
           <div
@@ -30,15 +31,15 @@ const Users = () => {
               </p>
             )}
             {user.status === "online" ? (
-              <div className="status-online"></div>
+              <div className="status-online" />
             ) : (
-              <div className="status-offline"></div>
+              <div className="status-offline" />
             )}
           </div>
         </li>
       ))}
     </ol>
   );
-};
+}
 
 export default Users;

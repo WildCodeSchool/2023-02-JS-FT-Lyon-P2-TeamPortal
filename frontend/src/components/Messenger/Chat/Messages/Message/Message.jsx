@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./Message.css";
 
 const getTimeString = (timestamp) => {
@@ -37,7 +38,7 @@ const getTimeString = (timestamp) => {
   return `${dayOfWeek}, ${dayOfMonth} ${month} ${year}, à ${hours}:${minutes}:${seconds}`;
 };
 
-const Message = ({ user, message }) => {
+function Message({ user, message }) {
   return (
     <div className="Message">
       <div className="user-info">
@@ -53,9 +54,9 @@ const Message = ({ user, message }) => {
             </p>
           )}
           {user.status === "online" ? (
-            <div className="status-online"></div>
+            <div className="status-online" />
           ) : (
-            <div className="status-offline"></div>
+            <div className="status-offline" />
           )}
         </div>
         <div className="time-and-date">{getTimeString(message.timestamp)}</div>
@@ -65,6 +66,21 @@ const Message = ({ user, message }) => {
       </div>
     </div>
   );
+}
+
+Message.propTypes = {
+  user: PropTypes.shape({
+    uuid: PropTypes.string.isRequired,
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    picture: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+  }).isRequired,
+  message: PropTypes.shape({
+    content: PropTypes.string.isRequired,
+    timestamp: PropTypes.string.isRequired,
+    authorId: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Message;

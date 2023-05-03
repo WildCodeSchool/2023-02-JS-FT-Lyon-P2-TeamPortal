@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./Input.css";
 
-const Input = ({ setMessages, currentUser }) => {
+function Input({ setMessages, currentUser }) {
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (event) => {
@@ -33,9 +34,22 @@ const Input = ({ setMessages, currentUser }) => {
         onKeyDown={handleKeyDown}
       />
 
-      <button onClick={handleSendClick}>send</button>
+      <button type="submit" onClick={handleSendClick}>
+        send
+      </button>
     </div>
   );
+}
+
+Input.propTypes = {
+  setMessages: PropTypes.func.isRequired,
+  currentUser: PropTypes.shape({
+    uuid: PropTypes.string.isRequired,
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    picture: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Input;

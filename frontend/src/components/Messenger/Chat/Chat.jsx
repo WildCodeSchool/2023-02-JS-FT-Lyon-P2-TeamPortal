@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Chat.css";
-import Messages from "./Messages/Messages.jsx";
-import Input from "./Input/Input.jsx";
-import usersList from "../assets/usersList.js";
+import Messages from "./Messages/Messages";
+import Input from "./Input/Input";
+import usersList from "../assets/usersList";
 
 let firstTime = true;
 
-const Chat = () => {
+function Chat() {
   const [messages, setMessages] = useState([]);
   const [currentUser] = useState(usersList[5]);
 
@@ -18,8 +18,8 @@ const Chat = () => {
   }, []);
 
   useEffect(() => {
-    if(!firstTime) localStorage.setItem("messages", JSON.stringify(messages));
-    else firstTime=!firstTime
+    if (!firstTime) localStorage.setItem("messages", JSON.stringify(messages));
+    else firstTime = !firstTime;
   }, [messages]);
 
   return (
@@ -28,6 +28,6 @@ const Chat = () => {
       <Input setMessages={setMessages} currentUser={currentUser} />
     </div>
   );
-};
+}
 
 export default Chat;
