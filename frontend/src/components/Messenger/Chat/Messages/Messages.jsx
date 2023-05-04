@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import "./Messages.css";
 import usersList from "../../assets/usersList";
@@ -12,10 +12,22 @@ const getUserById = (id) => {
 };
 
 function Messages({ messages }) {
+  const lastMessageRef = useRef();
+  const containerRef = useRef();
+
+  useEffect(() => {
+    if (lastMessageRef.current && containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    }
+  }, [messages]);
+
   return (
-    <ol className="Messages">
-      {messages.map((message) => (
-        <li key={message.authorId}>
+    <ol className="Messages" ref={containerRef}>
+      {messages.map((message, index) => (
+        <li
+          key={message.authorId}
+          ref={index === messages.length - 1 ? lastMessageRef : null}
+        >
           <Message user={getUserById(message.authorId)} message={message} />
         </li>
       ))}
