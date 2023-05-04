@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import LibraryCard from "../components/LibraryCard/LibraryCard";
+import UserContext from "../contexts/UserContext";
 
 const libraries = [
   {
@@ -76,18 +78,27 @@ const libraries = [
   },
 ];
 export default function Library() {
+  const { user } = useContext(UserContext);
   return (
     <div>
       <Header />
       <Navbar />
       <div className="containerlibrary">
-        {libraries.map((library) => (
-          <LibraryCard
-            key={library.title}
-            title={library.title}
-            docs={library.docs}
-          />
-        ))}
+        {user ? (
+          <>
+            {libraries.map((library) => (
+              <LibraryCard
+                key={library.title}
+                title={library.title}
+                docs={library.docs}
+              />
+            ))}
+          </>
+        ) : (
+          <NavLink to="/">
+            <h2 className="please">LogIn</h2>
+          </NavLink>
+        )}
       </div>
     </div>
   );

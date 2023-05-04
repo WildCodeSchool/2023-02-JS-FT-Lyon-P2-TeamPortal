@@ -17,11 +17,11 @@ export default function Header() {
           </p>
         ) : (
           <p>
-            <b>Online User :</b> none
+            <b>Online User :</b> NONE
           </p>
         )}
       </div>
-      <InfoText />
+      {user ? <InfoText /> : <p>PLEASE LOGIN</p>}
     </header>
   );
 }

@@ -21,7 +21,6 @@
 @media only screen and (max-width: 600px) {
   .Messenger {
     width: 100%;
-    height: 500px;
     grid-template-columns: 1fr;
   }
 

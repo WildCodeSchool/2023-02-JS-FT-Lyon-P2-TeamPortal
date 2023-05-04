@@ -102,6 +102,12 @@ body {
   margin-left: 10rem;
 }
 
+.please {
+  color: var(--light-color);
+  margin-top: 10rem;
+  text-align: center;
+}
+
 .top-home-container {
   width: 100%;
   height: 50vh;
@@ -115,7 +121,7 @@ body {
   flex-direction: row;
 }
 
-.left-home-container {
+.bottom-left-home-container {
   margin: 2rem;
   display: flex;
   flex-direction: column;
@@ -123,7 +129,7 @@ body {
   width: 50%;
 }
 
-.right-home-container {
+.bottom-right-home-container {
   width: 50%;
   display: flex;
   flex-direction: column;
