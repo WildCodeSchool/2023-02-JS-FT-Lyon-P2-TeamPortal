@@ -78,7 +78,7 @@ select {
 }
 
 body {
-  background-image: url("./src/assets/p2background.jpg");
+  background-image: url("./src/assets/background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
