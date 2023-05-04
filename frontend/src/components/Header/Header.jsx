@@ -11,13 +11,17 @@ export default function Header() {
         <h1>
           Team<span id="header-title">Portal</span>
         </h1>
-        {user && (
+        {user ? (
           <p>
             <b>Online User :</b> {user.email}
           </p>
+        ) : (
+          <p>
+            <b>Online User :</b> NONE
+          </p>
         )}
       </div>
-      <InfoText />
+      {user ? <InfoText /> : <p>PLEASE LOGIN</p>}
     </header>
   );
 }
