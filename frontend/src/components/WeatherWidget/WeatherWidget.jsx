@@ -51,8 +51,8 @@ export default function WeatherWidget() {
         <>
           <div className="top">
             <div className="day-date-location">
-              <p className="day">Wednesday</p>
-              <p className="date">May 10, 2023</p>
+              <p className="day">Mercredi</p>
+              <p className="date">10 Mai, 2023</p>
               <p className="location">Lyon, FR</p>
             </div>
 
@@ -88,19 +88,19 @@ export default function WeatherWidget() {
 
             <div className="more-information">
               <div className="feels-like">
-                <p className="label">feels like:</p>
+                <p className="label">ressenti:</p>
                 <p className="content">
                   {Math.round(data.current_weather.temperature) - 3}°C
                 </p>
               </div>
 
               <div className="humidity">
-                <p className="label">humidity:</p>
+                <p className="label">humidité:</p>
                 <p className="content">{data.hourly.relativehumidity_2m[0]}%</p>
               </div>
 
               <div className="wind">
-                <p className="label">wind:</p>
+                <p className="label">vent:</p>
                 <p className="content">
                   {Math.round(data.current_weather.windspeed)} m/s
                 </p>
