@@ -96,7 +96,7 @@ export default function Library() {
           </>
         ) : (
           <NavLink to="/">
-            <h2 className="please">LogIn</h2>
+            <h2 className="please">Cliquer Ici pour Reconnexion</h2>
           </NavLink>
         )}
       </div>

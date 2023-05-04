@@ -13,15 +13,15 @@ export default function Header() {
         </h1>
         {user ? (
           <p>
-            <b>Online User :</b> {user.email}
+            <b>Utilisateur Connecté :</b> {user.email}
           </p>
         ) : (
           <p>
-            <b>Online User :</b> NONE
+            <b>Utilisateur Connecté :</b> AUCUN
           </p>
         )}
       </div>
-      {user ? <InfoText /> : <p>PLEASE LOGIN</p>}
+      {user ? <InfoText /> : <p>Reconnexion nécessaire !</p>}
     </header>
   );
 }

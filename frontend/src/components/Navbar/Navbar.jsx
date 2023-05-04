@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import LoginIcon from "../../assets/loginIcon";
+import LogoutIcon from "../../assets/logoutIcon";
 import HomeIcon from "../../assets/homeIcon";
 import TeamsIcon from "../../assets/teamsIcon";
 import LibraryIcon from "../../assets/libraryIcon";
@@ -46,14 +46,14 @@ export default function Navbar() {
       {user ? (
         <div className="login">
           <NavLink to="/">
-            <LoginIcon />
+            <LogoutIcon />
             <h3>LogOut</h3>
           </NavLink>
         </div>
       ) : (
         <div className="login">
           <NavLink to="/">
-            <LoginIcon />
+            <LogoutIcon />
             <h3>LogIn</h3>
           </NavLink>
         </div>

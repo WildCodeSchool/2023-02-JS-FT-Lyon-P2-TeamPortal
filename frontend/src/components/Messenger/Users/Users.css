@@ -2,12 +2,12 @@
 
 .Users {
   background-color: #212121;
-
   display: grid;
   font-size: 0.8rem;
   font-weight: bold;
   max-height: 515px;
   overflow-y: auto;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .Users ol li {
