@@ -8,7 +8,7 @@ let firstTime = true;
 
 function Chat() {
   const [messages, setMessages] = useState([]);
-  const [currentUser] = useState(usersList[5]);
+  const [currentUser] = useState(usersList[13]);
 
   useEffect(() => {
     const storedMessages = JSON.parse(localStorage.getItem("messages"));

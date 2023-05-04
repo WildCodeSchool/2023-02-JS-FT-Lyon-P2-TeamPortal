@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./Input.css";
 
 function Input({ setMessages, currentUser }) {
@@ -10,6 +12,10 @@ function Input({ setMessages, currentUser }) {
   };
 
   const handleSendClick = () => {
+    if (inputValue.trim().length < 1) {
+      toast.error("Veuillez entrer au moins un caractère !");
+      return;
+    }
     const timestamp = new Date().toISOString();
     setMessages((messages) => [
       ...messages,
@@ -35,8 +41,9 @@ function Input({ setMessages, currentUser }) {
       />
 
       <button type="submit" onClick={handleSendClick}>
-        send
+        Envoyer
       </button>
+      <ToastContainer />
     </div>
   );
 }

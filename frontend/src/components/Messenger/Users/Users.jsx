@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Users.css";
 import usersList from "../assets/usersList";
 
 function Users() {
-  const [showNameStatus, setShowNameStatus] = useState(true);
-
   return (
     <ol className="Users">
       {usersList.map((user) => (
@@ -14,13 +12,8 @@ function Users() {
             alt="avatar.jpg"
             className="avatar"
             role="presentation"
-            onClick={() => setShowNameStatus(!showNameStatus)}
           />
-          <div
-            className={`name-status-container ${
-              showNameStatus ? "show" : "hide"
-            }`}
-          >
+          <div className="name-status-container">
             {user.status === "online" ? (
               <p className="username-online">
                 {user.firstName} {user.lastName}
