@@ -37,14 +37,28 @@ function CardModal({ member }) {
           {member.name.first} {member.name.last}
         </h1>
         <p className="job-title">{whatIsJob(member)}</p>
-        <p className="gender-text">{member.gender}</p>
         <p className="appearance-text">{member.dob.age} ans</p>
-        <p className="occupation-text">
-          Occupation : {member.location.street.number}
-        </p>
         <p className="base-text">
-          Adress : {member.location.state}, {member.location.country}
+          Adress :{" "}
+          <span className="important-text-color">
+            {member.location.city}, {member.location.state}
+          </span>
         </p>
+        <p className="occupation-text">
+          Member since :{" "}
+          <span className="important-text-color">
+            {member.registered.age} years
+          </span>
+        </p>
+        <button
+          className="mail-btn"
+          type="button"
+          onClick={() => {
+            window.location = `mailto:${member.email}`;
+          }}
+        >
+          Contact {member.name.first}
+        </button>
       </div>
     </div>
   );
@@ -60,12 +74,13 @@ CardModal.propTypes = {
     dob: PropTypes.shape({
       age: PropTypes.number.isRequired,
     }).isRequired,
+    registered: PropTypes.shape({
+      age: PropTypes.string.isRequired,
+    }).isRequired,
+    email: PropTypes.string.isRequired,
     location: PropTypes.shape({
       state: PropTypes.string.isRequired,
-      country: PropTypes.string.isRequired,
-      street: PropTypes.shape({
-        number: PropTypes.number.isRequired,
-      }),
+      city: PropTypes.string.isRequired,
     }).isRequired,
     picture: PropTypes.shape({
       large: PropTypes.string.isRequired,
