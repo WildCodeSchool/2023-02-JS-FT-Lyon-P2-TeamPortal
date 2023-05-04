@@ -35,7 +35,7 @@ function Input({ setMessages, currentUser }) {
       />
 
       <button type="submit" onClick={handleSendClick}>
-        send
+        Envoyer
       </button>
     </div>
   );
