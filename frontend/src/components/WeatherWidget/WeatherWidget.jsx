@@ -107,7 +107,7 @@ export default function WeatherWidget() {
               </div>
 
               <div className="pressure">
-                <p className="label">pressure:</p>
+                <p className="label">pression:</p>
                 <p className="content">
                   {Math.round(data.hourly.surface_pressure[0])} hPa
                 </p>
