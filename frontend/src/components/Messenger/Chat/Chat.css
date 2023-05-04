@@ -1,0 +1,15 @@
+/* --------------------------------------------------- General */
+
+.Chat {
+  background-color: #181818;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 15px;
+  width: 300px;
+}
+
+@media (max-width: 600px) {
+  .Chat {
+    width: 100%;
+  }
+}

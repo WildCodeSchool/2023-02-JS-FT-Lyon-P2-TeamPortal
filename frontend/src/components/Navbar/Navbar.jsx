@@ -4,10 +4,12 @@ import LoginIcon from "../../assets/loginIcon";
 import HomeIcon from "../../assets/homeIcon";
 import TeamsIcon from "../../assets/teamsIcon";
 import LibraryIcon from "../../assets/libraryIcon";
+import UserContext from "../../contexts/UserContext";
 
 import "./Navbar.css";
 
 export default function Navbar() {
+  const { user } = React.useContext(UserContext);
   return (
     <div className="navbar-container">
       <div className="nav">
@@ -21,7 +23,7 @@ export default function Navbar() {
         <nav>
           <ul>
             <li>
-              <NavLink to="/">
+              <NavLink to="/home">
                 <HomeIcon />
                 <h3>Home</h3>
               </NavLink>
@@ -41,12 +43,21 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
-      <div className="login">
-        <NavLink to="/login">
-          <LoginIcon />
-          <h3>Login</h3>
-        </NavLink>
-      </div>
+      {user ? (
+        <div className="login">
+          <NavLink to="/">
+            <LoginIcon />
+            <h3>LogOut</h3>
+          </NavLink>
+        </div>
+      ) : (
+        <div className="login">
+          <NavLink to="/">
+            <LoginIcon />
+            <h3>LogIn</h3>
+          </NavLink>
+        </div>
+      )}
     </div>
   );
 }
