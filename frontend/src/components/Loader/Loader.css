@@ -1,0 +1,113 @@
+.loader {
+  min-height: 100vh;
+  background-image: url("./src/assets/p2background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.loader-container{
+  position: relative;
+  width: 15rem;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo-test {
+  position: relative;
+  filter: drop-shadow(0.1rem 0.1rem 3rem rgb(4, 40, 247));
+  animation: glow 2s infinite linear;
+  animation: clignote 3s linear infinite;
+  max-width : 100%;
+  height : auto;
+  display: flex;
+}
+
+.loader-logo-container {
+  position: absolute; 
+  width: 22rem;
+  height: 22rem; 
+  display: flex;
+  animation: animate 5s linear infinite;
+  border: 5px solid;
+  border-color: var(--text-color) ;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+.loader-logo-container1{
+  position: absolute;
+  width: 22rem;
+  height: 22rem; 
+  display: flex;
+  animation: animate 5s linear infinite;
+  animation-direction: reverse;
+  border: 5px solid;
+  border-color: var(--main-bg-color);
+  border-radius: 30% 70% 12% 88% / 64% 66% 34% 36%;
+  }
+
+.loader-logo-container2{
+  position: absolute;
+  width: 22rem;
+  height: 22rem; 
+  display: flex;
+  animation: animate 5s linear infinite;
+  animation-duration: 2.5s;
+  border: 5px solid;
+  border-color: var(--dark-color);
+  border-radius: 89% 11% 78% 22% / 64% 66% 34% 36%;
+  }
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0.1rem 0.1rem 1rem rgb(4, 40, 247));
+  }
+  50% {
+    filter: drop-shadow(0.1rem 0.1rem 6rem rgb(4, 40, 247));
+  }
+  100% {
+    filter: drop-shadow(0.1rem 0.1rem 1rem rgb(4, 40, 247));
+  }
+}
+    
+@keyframes clignote {
+    50% {
+      opacity: 0
+    };
+  }
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .loader-container {
+    width: 10rem;
+    height: auto;
+  } 
+
+  .loader-logo-container{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .loader-logo-container1{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .loader-logo-container2{
+    width: 15rem;
+    height: 15rem;
+  }
+}

@@ -4,17 +4,19 @@ import PropTypes from "prop-types";
 
 function TeamCard({ members }) {
   return (
-    <div className="AllCards">
-      <div className="TeamCard">
-        <div className="TeamCardImageContainer">
+    <div className="all-cards">
+      <div className="team-card">
+        <div className="team-card-image-container">
           <img
-            src={members.image.url}
+            src={members.picture.large}
             alt={members.name}
-            className="TeamCard-Image"
+            className="team-card-image"
           />
         </div>
         <div>
-          <h1 className="TeamCardName">{members.name}</h1>
+          <h1 className="team-card-name">
+            {members.name.first} {members.name.last}
+          </h1>
         </div>
       </div>
     </div>
@@ -23,10 +25,13 @@ function TeamCard({ members }) {
 
 TeamCard.propTypes = {
   members: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    image: PropTypes.shape({
-      url: PropTypes.string.isRequired,
-    }).isRequired,
+    name: PropTypes.shape({
+      first: PropTypes.string.isRequired,
+      last: PropTypes.string.isRequired,
+    }),
+    picture: PropTypes.shape({
+      large: PropTypes.string.isRequired,
+    }),
   }).isRequired,
 };
 

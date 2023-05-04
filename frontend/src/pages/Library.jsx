@@ -1,39 +1,114 @@
-import React from "react";
-import LibraryList from "../components/LibraryList/LibraryList";
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
+import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
+import LibraryCard from "../components/LibraryCard/LibraryCard";
+import UserContext from "../contexts/UserContext";
 
 const libraries = [
   {
     title: "Infos RH",
-    docs: ["Réglement intérieur", "Convention collective", "Note de service"],
+    docs: [
+      {
+        file: "reglement_interieur.pdf",
+        title: "Réglement intérieur",
+      },
+      {
+        file: "convention_collective.pdf",
+        title: "Convention collective",
+      },
+      {
+        file: "note_de_service.pdf",
+        title: "Note de service",
+      },
+    ],
   },
+
   {
     title: "Fiches de poste",
     docs: [
-      "Dev Front",
-      "Dev Back",
-      "Team Manager",
-      "UI/UX designer",
-      "Business manager",
-      "Chargé de clientèle",
-      "Responsable des achats",
+      {
+        file: "dev_front.pdf",
+        title: "Dev Front",
+      },
+      {
+        file: "dev_back.pdf",
+        title: "Dev Back",
+      },
+      {
+        file: "manager_activite.pdf",
+        title: "Team Manager",
+      },
+      {
+        file: "ui_ux_design.pdf",
+        title: "UI/UX designer",
+      },
+      {
+        file: "manager_activite.pdf",
+        title: "Business manager",
+      },
+      {
+        file: "charge_de_clientele.pdf",
+        title: "Chargé de clientèle",
+      },
+      {
+        file: "responsable_achats.pdf",
+        title: "Responsable des achats",
+      },
     ],
   },
+
   {
     title: "Infos pratiques",
     docs: [
-      "Annuaire de l'entreprise",
-      "Demande de congés",
-      "Déclaration d'heures supplémentaires",
+      {
+        file: "annuaire.pdf",
+        title: "Annuaire de l'entreprise",
+      },
+      {
+        file: "fiche_conges.pdf",
+        title: "Demande de congés",
+      },
+      {
+        file: "formulaire_heures_supplementaires.pdf",
+        title: "Heures supplémentaires",
+      },
     ],
   },
 ];
-
 export default function Library() {
+  const { user } = useContext(UserContext);
   return (
     <div>
-      <div className="Library">
-        <LibraryList libraries={libraries} />
+      <Header />
+      <Navbar />
+      <div className="containerlibrary">
+        {user ? (
+          <>
+            {libraries.map((library) => (
+              <LibraryCard
+                key={library.title}
+                title={library.title}
+                docs={library.docs}
+              />
+            ))}
+          </>
+        ) : (
+          <NavLink to="/">
+            <h2 className="please">LogIn</h2>
+          </NavLink>
+        )}
       </div>
     </div>
   );
 }
+
+LibraryCard.propTypes = {
+  libraries: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      docs: PropTypes.arrayOf(PropTypes.string).isRequired,
+    })
+  ),
+};

@@ -1,36 +1,37 @@
 * {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 h1 {
   color: rgb(0, 0, 0);
 }
 
-.TeamCardImage {
-  max-width: 100%;
-  max-height: 100%;
+.team-card-image {
+ width: 500px;
+ height: 100%;
   border-radius: 20px;
   transition: scale 0.8s;
-  scale: 1.1;
+  scale: 1.15;
 }
 
-.TeamCardImage:hover {
-  scale: 1.25;
+.team-card-image:hover {
+  scale: 1.2;
 }
 
-.TeamCardImage {
+.team-card-image-container {
   padding: 20px auto;
   margin: 0 auto 10px auto;
   height: 190px;
-  width: 140px;
+  width: 170px;
   border-radius: 20px;
   overflow: hidden;
   border: black solid 0.1rem;
 }
 
-.TeamCard {
-  background-color: rgb(203, 203, 203);
+.team-card {
+  background-color: rgba(71, 71, 71, 0.753);
   margin: 10px 20px;
   width: 200px;
   height: 250px;
@@ -41,17 +42,23 @@ h1 {
   transition: all 0.4s ease-out;
 }
 
-.TeamCard:hover {
-  box-shadow: rgb(0, 202, 229) 0px 0px 20px 5px;
+.team-card:hover {
+  box-shadow: var(--main-bg-color) 0px 0px 20px 5px;
   transform: skew(1deg, 1deg);
+  scale: 1.1;
 }
 
-.TeamCardName {
+.team-card:active {
+  scale: 1;
+}
+
+.team-card-name {
   margin: 0px;
   font-size: 1rem;
+  color: rgb(255, 255, 255);
 }
 
-.TeamCardJob {
+.team-card-job {
   margin: 0px;
   font-size: 1rem;
   font-weight: 300;

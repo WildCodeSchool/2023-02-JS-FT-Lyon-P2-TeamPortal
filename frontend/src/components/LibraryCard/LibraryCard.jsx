@@ -17,7 +17,14 @@ export default function LibraryCard({ title, docs }) {
         {isShown && (
           <div className="documents">
             {docs.map((doc) => (
-              <h2 key={doc}>{doc}</h2>
+              <a
+                href={`../../src/assets/library/${doc.file}`}
+                key={doc.title}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3>{doc.title}</h3>
+              </a>
             ))}
           </div>
         )}

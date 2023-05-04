@@ -1,0 +1,30 @@
+/* --------------------------------------------------- General */
+
+.Messenger {
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "DejaVu Sans", sans-serif;
+  height: 100%;
+  color: white;
+  background-color: gray;
+}
+
+.Messenger {
+  width: 600px;
+  height: 515px;
+  background-color: gray;
+  display: grid;
+  margin: 0;
+  grid-template-columns: auto 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+  .Messenger {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  /*.Users {*/
+  /*  display: none;*/
+  /*}*/
+}

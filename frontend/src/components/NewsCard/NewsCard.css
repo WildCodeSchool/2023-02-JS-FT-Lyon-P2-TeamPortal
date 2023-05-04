@@ -1,26 +1,16 @@
-* {
-  --main-bg-color: #5eb5d7;
-  --text-color: #bbfaf0;
-  --second-color: #84eded;
-  --light-color: #f3fffc;
-  --dark-color: #4365b3;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .news-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: solid 1px var(--dark-color);
-  margin: 1rem 2rem 1rem 11rem;
+  margin: 2rem;
   border-radius: 1rem;
   overflow: hidden;
   width: 40vw;
-  height: 80vh;
+  height: 83vh;
   background-color: transparent;
   backdrop-filter: blur(5px);
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
 }
 
 .news-card:hover {
@@ -57,7 +47,7 @@
 .news-arrow {
   position: relative;
   background-color: transparent;
-  color: var(--dark-color);
+  color: var(--light-color);
   border: none;
   width: 2rem;
   font-size: 1.5rem;
@@ -107,4 +97,12 @@
   background-color: var(--dark-color);
   color: white;
   border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .news-card {
+    width: 100%;
+    height: 70%;
+    margin: 0rem 0rem 5rem 0rem;
+  }
 }

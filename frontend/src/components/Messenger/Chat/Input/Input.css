@@ -1,0 +1,38 @@
+.Input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #333131;
+}
+
+.Input input,
+button {
+  height: 45px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.Input input {
+  width: 70%;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+}
+
+.Input button {
+  padding: 15px 8px;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.Input button:hover {
+  cursor: pointer;
+}
