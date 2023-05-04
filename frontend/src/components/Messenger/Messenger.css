@@ -1,37 +1,36 @@
 /* --------------------------------------------------- General */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-family: "DejaVu Sans", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-family: "DejaVu Sans", sans-serif;
 }
 
 html,
 body {
-  height: 100%;
-  color: white;
-  background-color: gray;
+	height: 100%;
+	color: white;
+	background-color: gray;
 }
 
 .Messenger {
-  width: 600px;
-  height: 515px;
-  background-color: gray;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: auto 1fr;
+	width: 600px;
+	height: 515px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: auto 1fr;
 }
 
 @media only screen and (max-width: 600px) {
-  .Messenger {
-    width: 300px;
-    height: 500px;
-    grid-template-columns: 1fr;
-  }
-
-  /*.Users {*/
-  /*  display: none;*/
-  /*}*/
+	.Messenger {
+		width: 300px;
+		height: 500px;
+		grid-template-columns: 1fr;
+	}
+	
+	/*.Users {*/
+	/*  display: none;*/
+	/*}*/
 }
