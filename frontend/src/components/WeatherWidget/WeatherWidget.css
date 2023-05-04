@@ -1,5 +1,5 @@
 .weather-widget-container {
-  width: 30vw;
+  width: 32vw;
   height: 50vh;
   background: #263238;
   border: 1px solid var(--dark-color);
@@ -11,6 +11,7 @@
   line-height: 1.2;
   border-radius: 1rem;
   color: var(--text-color);
+  margin-bottom: 1rem;
 }
 
 .weather-widget-container:hover {
@@ -84,7 +85,7 @@ span.max-temperature {
 
 @media (max-width: 600px) {
   .weather-widget-container {
-    width: 80%;
+    width: 100%;
     height: auto;
   }
 }

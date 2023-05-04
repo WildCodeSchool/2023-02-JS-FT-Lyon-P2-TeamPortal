@@ -19,25 +19,23 @@ export default function Home() {
       <div className="home-container">
         {user ? (
           <>
-            <div className="top-home-container">
+            <div className="left-home-container">
               <Chart1 />
-              <Chart2 />
               <Chart3 />
+              <Chart2 />
             </div>
-            <div className="bottom-home-container">
-              <div className="bottom-left-home-container">
-                <WeatherWidget />
-                <Messenger />
-              </div>
-              <div className="bottom-right-home-container">
-                <NewsCard />
-              </div>
+            <div className="right-home-container">
+              <WeatherWidget />
+              <NewsCard />
+              <Messenger />
             </div>
           </>
         ) : (
-          <NavLink to="/">
-            <h2 className="please">LogIn</h2>
-          </NavLink>
+          <div className="please-container">
+            <NavLink to="/">
+              <h2 className="please">Cliquer Ici pour Reconnexion</h2>
+            </NavLink>
+          </div>
         )}
       </div>
     </>

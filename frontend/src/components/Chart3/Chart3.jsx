@@ -59,8 +59,10 @@ const data = {
 export default function Chart3() {
   return (
     <div className="chart3-container">
-      <p>Indicateurs de l'entreprise</p>
-      <Radar data={data} />;
+      <div className="chart3">
+        <p>Indicateurs de l'entreprise</p>
+        <Radar data={data} />;
+      </div>
     </div>
   );
 }

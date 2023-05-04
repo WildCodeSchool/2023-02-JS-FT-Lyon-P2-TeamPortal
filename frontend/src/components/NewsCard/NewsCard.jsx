@@ -10,12 +10,12 @@ import "./NewsCard.css";
 const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
 function NewsCard() {
-  const notify = () => toast.error("Sorry! No Incoming News");
+  const notify = () => toast.error("Désolé! Aucune Info pour le moment");
   const [news, setNews] = useState(null);
   const getNews = () => {
     axios
       .get(
-        `https://newsapi.org/v2/everything?apiKey=${NEWS_API_KEY}&language=en&q=web+development&sortBy=popularity`
+        `https://newsapi.org/v2/everything?apiKey=${NEWS_API_KEY}&language=fr&q=web+development&sortBy=popularity`
       )
       .then((response) => {
         setNews(response.data.articles);
