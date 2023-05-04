@@ -2,26 +2,30 @@
 
 .Messenger {
   box-sizing: border-box;
+  border-radius: 1rem;
   list-style-type: none;
   font-family: "DejaVu Sans", sans-serif;
   height: 100%;
   color: white;
   background-color: gray;
-}
-
-.Messenger {
-  width: 600px;
-  height: 515px;
+  width: 32vw;
+  height: 50vh;
   background-color: gray;
   display: grid;
   margin: 0;
   grid-template-columns: auto 1fr;
+  border: solid 1px var(--dark-color);
+}
+
+.Messenger:hover {
+  border: 1px solid var(--main-bg-color);
 }
 
 @media only screen and (max-width: 600px) {
   .Messenger {
     width: 100%;
     grid-template-columns: 1fr;
+    margin-bottom: 5rem;
   }
 
   /*.Users {*/
