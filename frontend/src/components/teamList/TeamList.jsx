@@ -29,7 +29,7 @@ export default function TeamList() {
 
   useEffect(() => {
     axios
-      .get(`https://randomuser.me/api/?page=3&results=30&seed=abc&nat=fr`)
+      .get(`https://randomuser.me/api/?page=5&results=30&seed=abc&nat=fr`)
       .then((response) => setTeamData(response.data.results))
       .catch((error) => {
         notify(error.message);
@@ -97,7 +97,7 @@ export default function TeamList() {
           <button
             className="member-button"
             type="button"
-            key={members.location.street.number}
+            key={members.login.uuid}
             onClick={() => setMemberIndex(index)}
             onKeyDown={(e) => {
               if (e.key === "Enter") setMemberIndex(index);
@@ -109,7 +109,15 @@ export default function TeamList() {
       </div>
 
       {memberIndex != null && (
-        <div className="modal">
+        <div
+          className="modal"
+          tabIndex="0"
+          role="button"
+          onClick={() => setMemberIndex(null)}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") setMemberIndex(null);
+          }}
+        >
           <div className="overlay">
             <div className="modal-content">
               <CardModal member={filteredUsers[memberIndex]} />

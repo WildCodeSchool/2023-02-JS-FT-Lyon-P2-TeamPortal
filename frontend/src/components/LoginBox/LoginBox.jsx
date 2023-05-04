@@ -79,7 +79,7 @@ function LoginBox() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"
-                className="input"
+                className="input-login"
               />
             </label>
             <div>

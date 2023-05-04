@@ -2,14 +2,8 @@
 
 .Messenger {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   font-family: "DejaVu Sans", sans-serif;
-}
-
-html,
-body {
   height: 100%;
   color: white;
   background-color: gray;
@@ -20,14 +14,13 @@ body {
   height: 515px;
   background-color: gray;
   display: grid;
-  margin: 0 auto;
+  margin: 0;
   grid-template-columns: auto 1fr;
 }
 
 @media only screen and (max-width: 600px) {
   .Messenger {
-    width: 300px;
-    height: 500px;
+    width: 100%;
     grid-template-columns: 1fr;
   }
 

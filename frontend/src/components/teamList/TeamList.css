@@ -142,7 +142,8 @@ body.active-modal {
 }
 
 .overlay {
-  background: rgba(49, 49, 49, 0.8);
+  background: rgba(35, 35, 35, 0.68);
+  z-index: 0;
 }
 
 .modal-content {
@@ -155,9 +156,10 @@ body.active-modal {
   border: solid white 4px;
   padding: 30px 28px;
   border-radius: 20px;
-  height: 80vh;
-  width: 80%;
+  height: 65vh;
+  width: 70%;
   transition: all 1s ease;
+  z-index: 2;
 }
 
 .close-modal {
@@ -166,11 +168,16 @@ body.active-modal {
   right: 15px;
   padding: 5px 7px;
   background-color: #027aa9;
-  border: #393939 solid 3px;
+  border: #ffffff solid 3px;
+  color: white;
   border-radius: 10px;
+  height: 60px;
+  width: 120px;
+  font-size: 1.7rem;
+  transition: all 0.2s ease;
 }
 
 .close-modal:hover {
   background-color: #1da9e0;
-  scale: 1.05;
+  scale: 1.1;
 }
