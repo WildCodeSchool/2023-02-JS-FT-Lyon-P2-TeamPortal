@@ -25,19 +25,19 @@ export default function Navbar() {
             <li>
               <NavLink to="/home">
                 <HomeIcon />
-                <h3>Home</h3>
+                <h3>Accueil</h3>
               </NavLink>
             </li>
             <li>
               <NavLink to="/teams">
                 <TeamsIcon />
-                <h3>Teams</h3>
+                <h3>Équipes</h3>
               </NavLink>
             </li>
             <li>
               <NavLink to="/library">
                 <LibraryIcon />
-                <h3>Library</h3>
+                <h3>Ressources</h3>
               </NavLink>
             </li>
           </ul>
@@ -47,14 +47,14 @@ export default function Navbar() {
         <div className="login">
           <NavLink to="/">
             <LogoutIcon />
-            <h3>LogOut</h3>
+            <h3>Déconnexion</h3>
           </NavLink>
         </div>
       ) : (
         <div className="login">
           <NavLink to="/">
             <LogoutIcon />
-            <h3>LogIn</h3>
+            <h3>Connexion</h3>
           </NavLink>
         </div>
       )}

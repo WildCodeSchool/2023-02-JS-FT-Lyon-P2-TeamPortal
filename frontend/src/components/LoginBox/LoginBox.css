@@ -22,6 +22,17 @@
   font-weight: bold;
   padding: 2rem;
 }
+.login-form input:hover {
+  border: 1px solid var(--main-bg-color);
+}
+
+.login-form input {
+  border: 1px solid var(--dark-color);
+  width: 12rem;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
 
 .submit-btn {
   background-color: #ffffff;
