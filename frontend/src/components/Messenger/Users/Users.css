@@ -1,82 +1,78 @@
 /* --------------------------------------------------- General */
 
-.Users {
-  background-color: #212121;
-  padding: 10px;
-  display: grid;
-  font-size: 0.8rem;
-  font-weight: bold;
-  max-height: 515px;
-  overflow-y: auto;
+.Messenger .Users {
+    background-color: #212121;
+    padding: 10px;
+    display: grid;
+    font-size: 0.8rem;
+    font-weight: bold;
+    max-height: 515px;
+    overflow-y: auto;
 }
 
-ol li {
-  margin-bottom: 8px;
+.Messenger ol li {
+    margin-bottom: 8px;
 }
 
-.Users li {
-  display: flex;
-  align-items: center;
-  padding: 6px;
-  border-radius: 15px;
+.Messenger .Users li {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 15px;
 }
 
-.Users li:hover {
-  background-color: darkorange;
-  cursor: pointer;
+.Messenger .Users li:hover {
+    background-color: darkorange;
+    cursor: pointer;
 }
 
-img.avatar {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+.Messenger img.avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 
-.username-online,
-.username-offline {
-  margin-left: 10px;
-  color: white;
+.Messenger .username-online,
+.Messenger .username-offline {
+    margin-left: 10px;
+    color: white;
 }
 
-/*.username-online:hover, .username-offline:hover {*/
-/*	color: deeppink;*/
-/*}*/
-
-.username-online {
-  color: white;
+.Messenger .username-online {
+    color: white;
 }
 
-.username-offline {
-  color: dimgray;
+.Messenger .username-offline {
+    color: dimgray;
 }
 
-.status-online {
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  margin-left: 5px;
-  background-color: green;
+.Messenger .status-online {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: green;
 }
 
-.status-offline {
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  margin-left: 5px;
-  background-color: dimgray;
+.Messenger .status-offline {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: dimgray;
 }
 
-.name-status-container {
-  display: flex;
-  align-items: center;
+.Messenger .name-status-container {
+    display: flex;
+    align-items: center;
 }
 
-.name-status-container.hide {
-  display: none;
+.Messenger .name-status-container.hide {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .Users {
-    display: none;
-  }
+    .Messenger .Users {
+        display: none;
+    }
 }

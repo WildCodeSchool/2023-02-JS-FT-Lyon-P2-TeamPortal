@@ -1,38 +1,38 @@
-.Input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #333131;
+.Messenger .Input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #333131;
 }
 
-input,
+.Messenger input,
 button {
-  height: 45px;
-  font-size: 1rem;
-  border-radius: 10px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 10px;
 }
 
-input {
-  width: 70%;
-  padding: 15px 10px;
-  border: none;
-  outline: none;
+.Messenger input {
+    width: 70%;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
 }
 
-button {
-  padding: 15px 8px;
-  display: flex;
-  align-items: center;
-  margin-left: 8px;
-  color: white;
-  background-color: blue;
-  font-weight: bold;
-  border: none;
-  outline: none;
+.Messenger button {
+    padding: 15px 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    border: none;
+    outline: none;
 }
 
-button:hover {
-  cursor: pointer;
+.Messenger .Input button:hover {
+    cursor: pointer;
 }
