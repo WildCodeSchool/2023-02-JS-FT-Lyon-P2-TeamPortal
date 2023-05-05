@@ -91,7 +91,7 @@ export default function WeatherWidget() {
                   alt="weather.png"
                 />
                 <p className="center">
-                  ({weatherCodes[data.current_weather.weathercode]})
+                  {weatherCodes[data.current_weather.weathercode]}
                 </p>
               </figcaption>
             </div>
