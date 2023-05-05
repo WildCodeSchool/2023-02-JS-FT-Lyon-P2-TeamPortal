@@ -1,0 +1,73 @@
+{
+  "libraries": [
+    {
+      "title": "Infos RH",
+      "docs": [
+        {
+          "file": "reglement_interieur.pdf",
+          "title": "Réglement intérieur"
+        },
+        {
+          "file": "convention_collective.pdf",
+          "title": "Convention collective"
+        },
+        {
+          "file": "note_de_service.pdf",
+          "title": "Note de service"
+        }
+      ]
+    },
+
+    {
+      "title": "Fiches de poste",
+      "docs": [
+        {
+          "file": "dev_front.pdf",
+          "title": "Dev Front"
+        },
+        {
+          "file": "dev_back.pdf",
+          "title": "Dev Back"
+        },
+        {
+          "file": "manager_activite.pdf",
+          "title": "Team Manager"
+        },
+        {
+          "file": "ui_ux_design.pdf",
+          "title": "UI/UX designer"
+        },
+        {
+          "file": "manager_activite.pdf",
+          "title": "Business manager"
+        },
+        {
+          "file": "charge_de_clientele.pdf",
+          "title": "Chargé de clientèle"
+        },
+        {
+          "file": "responsable_achats.pdf",
+          "title": "Responsable des achats"
+        }
+      ]
+    },
+
+    {
+      "title": "Infos pratiques",
+      "docs": [
+        {
+          "file": "annuaire.pdf",
+          "title": "Annuaire de l'entreprise"
+        },
+        {
+          "file": "fiche_conges.pdf",
+          "title": "Demande de congés"
+        },
+        {
+          "file": "formulaire_heures_supplementaires.pdf",
+          "title": "Heures supplémentaires"
+        }
+      ]
+    }
+  ]
+}

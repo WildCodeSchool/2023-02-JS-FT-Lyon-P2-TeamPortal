@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+}
+
+.team-card-image {
+  width: 500px;
+  height: 100%;
+  border-radius: 20px;
+  transition: scale 0.8s;
+  scale: 1.15;
+}
+
+.team-card-image:hover {
+  scale: 1.2;
+}
+
+.team-card-image-container {
+  padding: 20px auto;
+  margin: 0 auto 10px auto;
+  height: 190px;
+  width: 170px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: black solid 0.1rem;
+}
+
+.team-card {
+  background-color: rgba(71, 71, 71, 0.753);
+  margin: 10px 20px;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  font-family: "KoHo", sans-serif;
+  padding-top: 20px;
+  box-shadow: black 0px 0px 20px 0px;
+  transition: all 0.4s ease-out;
+}
+
+.team-card:hover {
+  box-shadow: var(--main-bg-color) 0px 0px 20px 5px;
+  transform: skew(1deg, 1deg);
+  scale: 1.1;
+}
+
+.team-card:active {
+  scale: 1;
+}
+
+.team-card-name {
+  margin: 0px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.team-card-job {
+  margin: 0px;
+  font-size: 1rem;
+  font-weight: 300;
+}

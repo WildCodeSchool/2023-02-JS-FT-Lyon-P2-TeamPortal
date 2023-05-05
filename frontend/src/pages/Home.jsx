@@ -1,36 +1,43 @@
-import Counter from "../components/Counter";
-import logo from "../assets/logo.svg";
+import { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import WeatherWidget from "../components/WeatherWidget/WeatherWidget";
+import NewsCard from "../components/NewsCard/NewsCard";
+import Chart1 from "../components/Chart1/Chart1";
+import Chart2 from "../components/Chart2/Chart2";
+import Chart3 from "../components/Chart3/Chart3";
+import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
+import Messenger from "../components/Messenger/Messenger";
+import UserContext from "../contexts/UserContext";
 
 export default function Home() {
+  const { user } = useContext(UserContext);
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <>
+      <Header />
+      <Navbar />
+      <div className="home-container">
+        {user ? (
+          <>
+            <div className="left-home-container">
+              <Chart1 />
+              <Chart3 />
+              <Chart2 />
+            </div>
+            <div className="right-home-container">
+              <WeatherWidget />
+              <NewsCard />
+              <Messenger />
+            </div>
+          </>
+        ) : (
+          <div className="please-container">
+            <NavLink to="/">
+              <h2 className="please">Cliquer Ici pour Reconnexion</h2>
+            </NavLink>
+          </div>
+        )}
+      </div>
+    </>
   );
 }

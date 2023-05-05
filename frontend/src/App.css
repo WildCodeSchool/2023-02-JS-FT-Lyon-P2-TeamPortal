@@ -1,56 +1,174 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Titillium+Web:wght@300;400;700&family=Work+Sans:wght@400;700&display=swap");
+
+/* Reset CSS Anday Bell */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
-.App {
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-image: url("./src/assets/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--text-color);
+  font-family: Koho, sans-serif;
+}
+
+:root {
+  --main-bg-color: #5eb5d7;
+  --text-color: #bbfaf0;
+  --second-color: #84eded;
+  --light-color: #f3fffc;
+  --dark-color: #4365b3;
+}
+
+.containerlibrary {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 10rem;
+}
+.please-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.please {
+  color: var(--light-color);
+  margin-top: 10rem;
+  font-size: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-container {
+  padding-top: 1rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 55%;
 }
 
-.App-link {
-  color: #61dafb;
+.right-home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.login-container {
+  padding: 9rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-header h1 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 600px) {
+  .containerlibrary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-button {
-  font-size: calc(10px + 2vmin);
+  .home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-home-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .right-home-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }

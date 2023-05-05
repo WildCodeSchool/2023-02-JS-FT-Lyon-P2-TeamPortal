@@ -1,0 +1,29 @@
+header {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 8rem;
+  background: black;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  opacity: 50%;
+  position: relative;
+  top: 0;
+}
+.header-top {
+  max-width: 80%;
+  display: block;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+header span#header-title {
+  color: deepskyblue;
+}

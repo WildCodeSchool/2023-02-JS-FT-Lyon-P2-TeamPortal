@@ -1,0 +1,34 @@
+.chart3-container {
+  width: 32vw;
+  background-color: var(--light-color);
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  border: 1px solid var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+.chart3 {
+  padding: 2rem;
+}
+
+.chart3-container p {
+  color: black;
+  text-align: center;
+}
+
+.chart3-container:hover {
+  border: 1px solid var(--main-bg-color);
+}
+
+@media screen and (max-width: 600px) {
+  .chart3-container {
+    width: 100%;
+    height: 60vh;
+  }
+  .chart3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
