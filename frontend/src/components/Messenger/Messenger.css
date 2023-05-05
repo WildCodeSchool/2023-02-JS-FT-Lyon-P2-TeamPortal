@@ -1,19 +1,4 @@
-/* --------------------------------------------------- General */
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	font-family: "DejaVu Sans", sans-serif;
-}
-
-html,
-body {
-	height: 100%;
-	color: white;
-	background-color: gray;
-}
 
 .Messenger {
 	width: 600px;

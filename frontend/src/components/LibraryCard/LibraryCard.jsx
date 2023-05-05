@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./LibraryCard.css";
 
 export default function LibraryCard({ title, docs }) {
-  const [isShown, setIsShown] = useState(false);
+  const [isShown, setIsShown] = useState(true);
   return (
     <div>
       <div className="librarycardbox">
