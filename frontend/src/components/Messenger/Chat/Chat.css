@@ -1,9 +1,9 @@
 /* --------------------------------------------------- General */
 
-.Chat {
-  background-color: #181818;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  padding: 15px;
-  width: 350px;
+.Messenger .Chat {
+    background-color: #181818;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 15px;
+    width: 350px;
 }
