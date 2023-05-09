@@ -155,8 +155,8 @@ body.active-modal {
   border: solid white 4px;
   padding: 30px 28px;
   border-radius: 20px;
-  height: 65vh;
-  width: 70%;
+  height: 75vh;
+  width: 75%;
   transition: all 1s ease;
   z-index: 2;
 }
@@ -179,4 +179,56 @@ body.active-modal {
 .close-modal:hover {
   background-color: #1da9e0;
   scale: 1.1;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.radio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0 10px 0;
+   
+    height: 180px;
+    width: 80vw;
+    
+  }
+
+  .global-container {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .great-team-members {
+    width: 85vw;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 415px) {
+	.radio-container {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    
+  }
+
+  .global-container {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .great-team-members {
+    width: inherit;
+    
+    margin: 0 0 100px 0;
+    padding: 0;
+  }
+  .TeamList {
+    width: 95vw;
+  }
 }

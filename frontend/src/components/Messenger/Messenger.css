@@ -1,16 +1,19 @@
 
 .Messenger {
-	width: 600px;
+	width: 32vw;
 	height: 515px;
-	display: grid;
-	grid-template-columns: auto 1fr;
+	display: flex;
+	margin: 20px 0;
 	justify-content: center;
+	
+	
 }
 
 @media only screen and (max-width: 600px) {
 	.Messenger {
-		width: 300px;
+		width: 100%;
 		height: 500px;
-		grid-template-columns: 1fr;
+		
+		
 	}
 }
