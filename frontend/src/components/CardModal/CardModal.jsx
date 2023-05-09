@@ -5,13 +5,13 @@ import "./CardModal.css";
 function CardModal({ member }) {
   const whatIsJob = (user) => {
     if (parseInt(user.registered.age, 10) <= 6) {
-      return "Dev Front-End";
+      return "Developpeur Front-End";
     }
     if (parseInt(user.registered.age, 10) <= 8) {
-      return "Dev Back-End";
+      return "Developpeur Back-End";
     }
     if (parseInt(user.registered.age, 10) <= 10) {
-      return "UX / UI";
+      return " Design UX / UI";
     }
     if (parseInt(user.registered.age, 10) <= 15) {
       return "Graphiste";
@@ -39,15 +39,15 @@ function CardModal({ member }) {
         <p className="job-title">{whatIsJob(member)}</p>
         <p className="appearance-text">{member.dob.age} ans</p>
         <p className="base-text">
-          Adress :{" "}
+          Adresse :{" "}
           <span className="important-text-color">
             {member.location.city}, {member.location.state}
           </span>
         </p>
         <p className="occupation-text">
-          Member since :{" "}
+          Membre depuis :{" "}
           <span className="important-text-color">
-            {member.registered.age} years
+            {member.registered.age} ans
           </span>
         </p>
         <button
@@ -57,7 +57,7 @@ function CardModal({ member }) {
             window.location = `mailto:${member.email}`;
           }}
         >
-          Contact {member.name.first}
+          Contacter {member.name.first}
         </button>
       </div>
     </div>

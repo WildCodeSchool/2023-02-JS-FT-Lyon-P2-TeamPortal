@@ -21,7 +21,11 @@ export default function Header() {
           </p>
         )}
       </div>
-      {user ? <InfoText /> : <p>Reconnexion nécessaire !</p>}
+      {user ? (
+        <InfoText />
+      ) : (
+        <p className="reconnexion">Reconnexion nécessaire !</p>
+      )}
     </header>
   );
 }

@@ -7,7 +7,7 @@ function TeamDevData() {
       <h1>Team Dev</h1>
       <ul>
         <li>
-          <p>Effectif : 5</p>
+          <p>Effectif : 12</p>
         </li>
         <li>
           <p>Effectif / Total: 27%</p>
@@ -16,10 +16,10 @@ function TeamDevData() {
           <p>Contribution au CA de l’année n-1 : 863 400€</p>
         </li>
         <li>
-          <p>Lead Dev : Brave Pitre </p>
+          <p>Lead Dev : Elias Thomas </p>
         </li>
         <li>
-          <p>Dernier membre arrivé : Brave Huitre (28/07/2023) </p>
+          <p>Dernier membre arrivé : Lena Dumas (27/02/2023) </p>
         </li>
       </ul>
     </div>

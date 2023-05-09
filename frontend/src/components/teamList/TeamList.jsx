@@ -85,7 +85,7 @@ export default function TeamList() {
       </ul>
       {selectedRadio !== "Everyone" ? (
         <button type="button" className="btn-toggle" onClick={handleToggle}>
-          Show details
+          Infos Équipe
         </button>
       ) : (
         ""
@@ -126,7 +126,7 @@ export default function TeamList() {
                 className="close-modal"
                 onClick={() => setMemberIndex(null)}
               >
-                CLOSE
+                Fermer
               </button>
             </div>
           </div>

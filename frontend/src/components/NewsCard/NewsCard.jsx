@@ -15,7 +15,7 @@ function NewsCard() {
   const getNews = () => {
     axios
       .get(
-        `https://newsapi.org/v2/everything?apiKey=${NEWS_API_KEY}&language=fr&q=web+development&sortBy=popularity`
+        `https://newsapi.org/v2/everything?apiKey=${NEWS_API_KEY}&language=en&q=web+development&sortBy=popularity`
       )
       .then((response) => {
         setNews(response.data.articles);
@@ -52,10 +52,8 @@ function NewsCard() {
           </div>
           <div className="bottom-container">
             <h3 className="news-title">{news[newsIndex].title}</h3>
-            <p className="news-description">{news[newsIndex].description}</p>
-            <p>{news[newsIndex].content}</p>
-            <p className="news-author">Autheur: {news[newsIndex].author}</p>
-            <p />
+            <p className="news-content">{news[newsIndex].content}</p>
+            <p className="news-author">Auteur: {news[newsIndex].author}</p>
           </div>
           <div className="news-nav-container">
             <div className="news-nav">

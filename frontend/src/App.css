@@ -92,7 +92,7 @@ body {
   --main-bg-color: #5eb5d7;
   --text-color: #bbfaf0;
   --second-color: #84eded;
-  --light-color: #f3fffc;
+  --light-text-color: #f3fffc;
   --dark-color: #4365b3;
 }
 
@@ -102,12 +102,14 @@ body {
   align-items: flex-start;
   margin-left: 10rem;
 }
+
 .please-container {
   margin-top: 10rem;
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
+
 .logout-btn {
   background-color: #ffffff;
   border: 1px solid var(--dark-color);
@@ -134,7 +136,7 @@ body {
   width: auto;
 }
 
-.submit-btn:hover {
+.logout-btn:hover {
   border: 1px solid var(--main-bg-color);
   color: rgb(86, 179, 86);
 }

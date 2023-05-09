@@ -16,6 +16,7 @@
 .Messenger input {
   width: 70%;
   padding: 15px 10px;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
 }
@@ -30,6 +31,7 @@
   font-weight: bold;
   border: none;
   outline: none;
+  border-radius: 0.5rem;
 }
 
 .Messenger .Input button:hover {
