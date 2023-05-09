@@ -87,7 +87,6 @@ function TodoList() {
             <div className="todo-item">
               <div className="todo-content">
                 {" "}
-                {/* Add this div */}
                 <input
                   type="checkbox"
                   id={`todo-${todo.id}`}
