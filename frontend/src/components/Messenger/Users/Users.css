@@ -25,7 +25,7 @@
 }
 
 .Messenger .Users li:hover {
-    background-color: darkorange;
+    background-color: blue;
     cursor: pointer;
 }
 
