@@ -5,6 +5,7 @@
   border-radius: 20px;
   border: 2px solid var(--light-color);
   background-color: rgba(49, 49, 49, 0.504);
+  margin-bottom: 1rem;
 }
 
 .todo-list:hover {
