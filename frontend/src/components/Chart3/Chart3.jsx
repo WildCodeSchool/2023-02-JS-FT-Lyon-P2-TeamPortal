@@ -10,6 +10,7 @@ import {
   Legend,
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
+import Chart from "chart.js/auto";
 
 ChartJS.register(
   RadialLinearScale,
@@ -19,6 +20,8 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
+Chart.defaults.color = "#ffffff";
 
 const labels = [
   "Absentéisme",
