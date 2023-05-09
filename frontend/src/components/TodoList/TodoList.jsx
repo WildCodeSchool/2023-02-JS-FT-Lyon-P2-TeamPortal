@@ -97,9 +97,7 @@ function TodoList() {
                 <label
                   htmlFor={`todo-${todo.id}`}
                   style={
-                    todo.completed
-                      ? { textDecoration: "line-through", color: "darkorange" }
-                      : {}
+                    todo.completed ? { textDecoration: "line-through" } : {}
                   }
                   className="todoText"
                 >
