@@ -68,22 +68,28 @@ h1 {
 @media only screen and (max-width: 500px) {
 	.team-card {
     margin: 10px 0px;
-    width: 300px;   
+    width: 450px;   
     height: 340px;
-    padding-top: 20px;
+    padding: 20px;
+  
   }
  
   .all-cards {
     display: flex;
     justify-content: center;
+    width: 100;
   }
   .team-card-image-container {
     padding: 20px auto;
     margin: 0 auto 10px auto;
     height: 280px;
-    width: 280px;
+    width: 300px;
     border-radius: 20px;
     overflow: hidden;
+    text-align: center;
     border: rgb(0, 0, 0) solid 0.1rem;
+  }
+  .team-card-image {
+    width: 280px;
   }
 }
