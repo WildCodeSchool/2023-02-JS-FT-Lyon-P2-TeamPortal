@@ -1,81 +1,81 @@
 /* --------------------------------------------------- General */
 
 .Messenger .Users {
-    background-color: #212121;
-    padding: 10px;
-    display: grid;
-    font-size: 0.8rem;
-    font-weight: bold;
-    max-height: 515px;
-    overflow-y: auto;
-    width: 250px;
-    border-radius: 20px 0 0 20px;
-    border: 4px solid var(--light-color);
+  background-color: #212121;
+  padding: 10px;
+  display: grid;
+  font-size: 0.8rem;
+  font-weight: bold;
+  max-height: 515px;
+  overflow-y: auto;
+  width: 250px;
+  border-radius: 20px 0 0 20px;
+  border: 4px solid var(--light-color);
 }
 
 .Messenger ol li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .Messenger .Users li {
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-radius: 15px;
 }
 
 .Messenger .Users li:hover {
-    background-color: blue;
-    cursor: pointer;
+  background-color: blue;
+  cursor: pointer;
 }
 
 .Messenger img.avatar {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 
 .Messenger .username-online,
 .Messenger .username-offline {
-    margin-left: 10px;
-    color: white;
+  margin-left: 10px;
+  color: white;
 }
 
 .Messenger .username-online {
-    color: white;
+  color: white;
 }
 
 .Messenger .username-offline {
-    color: dimgray;
+  color: dimgray;
 }
 
 .Messenger .status-online {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    margin-left: 5px;
-    background-color: green;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: green;
 }
 
 .Messenger .status-offline {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    margin-left: 5px;
-    background-color: dimgray;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: dimgray;
 }
 
 .Messenger .name-status-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Messenger .name-status-container.hide {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    .Messenger .Users {
-        width: 250px;
-    }
+  .Messenger .Users {
+    width: 250px;
+  }
 }
