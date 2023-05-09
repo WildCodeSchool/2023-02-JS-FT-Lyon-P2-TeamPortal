@@ -27,11 +27,29 @@ export const options = {
   plugins: {
     legend: {
       position: "top",
+      labels: {
+        color: "white",
+      },
     },
     title: {
       display: true,
       text: "Mon Activité Annuelle",
       color: "white",
+    },
+    tooltip: {
+      bodyColor: "white",
+    },
+  },
+  scales: {
+    y: {
+      ticks: {
+        color: "white",
+      },
+    },
+    x: {
+      ticks: {
+        color: "white",
+      },
     },
   },
 };
