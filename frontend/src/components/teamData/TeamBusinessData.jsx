@@ -7,19 +7,19 @@ function TeamBusinessData() {
       <h1>Team Business</h1>
       <ul>
         <li>
-          <p>Effectif : 15</p>
+          <p>Effectif : 5</p>
         </li>
         <li>
-          <p>Effectif / Total: 32%</p>
+          <p>Effectif / Total: 18%</p>
         </li>
         <li>
           <p>Contribution au CA de l’année n-1 : 214 400€</p>
         </li>
         <li>
-          <p>Lead Dev : Brave Pitre </p>
+          <p>Directeur Général : Armand Louis </p>
         </li>
         <li>
-          <p>Dernier membre arrivé : Brave Huitre (28/07/2023) </p>
+          <p>Dernier membre arrivé : Cassandre Moulin (28/07/2023) </p>
         </li>
       </ul>
     </div>

@@ -1,5 +1,3 @@
-
-
 .librarytitle {
   background-color: var(--second-color);
   width: 25vw;
@@ -14,7 +12,8 @@
   font-weight: bold;
   color: var(--dark-color);
   display: flex;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .librarytitle:hover {
@@ -35,10 +34,16 @@
   display: flex;
   text-decoration: none;
   color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .documents a:hover {
   background-color: var(--dark-color);
+}
+
+.documents a:last-child {
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 600px) {
@@ -56,7 +61,7 @@
     font-size: 1.5rem;
     margin-top: 4rem;
     margin-bottom: 0;
-    margin-right: 0;    
+    margin-right: 0;
   }
 
   .documents a:hover {

@@ -7,6 +7,7 @@ export default function LoginIcon() {
       strokeWidth={1.5}
       stroke="currentColor"
       className="w-6 h-6"
+      width="2rem"
     >
       <path
         strokeLinecap="round"

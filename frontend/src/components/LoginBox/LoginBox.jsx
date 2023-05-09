@@ -60,7 +60,7 @@ function LoginBox() {
     <div>
       <div className="loginbox-container">
         <div className="loginbox-title">
-          <h2>LOGIN</h2>
+          <h2>Connexion</h2>
         </div>
         <div className="form-container">
           <form onSubmit={handleSubmit} className="login-form">
@@ -74,7 +74,7 @@ function LoginBox() {
               />
             </label>
             <label>
-              <p>Password</p>
+              <p>Mot de Passe</p>
               <input
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -84,7 +84,7 @@ function LoginBox() {
             </label>
             <div>
               <button type="submit" className="submit-btn">
-                Login
+                Se Connecter
               </button>
             </div>
           </form>
