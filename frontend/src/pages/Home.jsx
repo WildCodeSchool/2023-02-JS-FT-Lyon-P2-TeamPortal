@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import TodoList from "@components/TodoList/TodoList";
 import WeatherWidget from "../components/WeatherWidget/WeatherWidget";
 import NewsCard from "../components/NewsCard/NewsCard";
 import Chart1 from "../components/Chart1/Chart1";
@@ -28,6 +29,7 @@ export default function Home() {
               <WeatherWidget />
               <NewsCard />
               <Messenger />
+              <TodoList />
             </div>
           </>
         ) : (
