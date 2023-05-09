@@ -11,7 +11,6 @@
   line-height: 1.2;
   border-radius: 1rem;
   color: var(--text-color);
-    margin-bottom: 20px;
 }
 
 .weather-widget-container:hover {
