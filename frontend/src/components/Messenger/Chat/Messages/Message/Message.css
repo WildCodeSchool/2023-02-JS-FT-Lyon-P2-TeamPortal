@@ -1,9 +1,8 @@
-.Message .message-and-time {
-  /*font-size: 0.5rem;*/
+.Messenger .Message .message-and-time {
   font-size: 2rem;
 }
 
-.user-info .picture-name-status {
+.Messenger .user-info .picture-name-status {
   display: flex;
   align-items: center;
 }

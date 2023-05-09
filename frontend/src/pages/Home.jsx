@@ -8,6 +8,7 @@ import Chart3 from "../components/Chart3/Chart3";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import Messenger from "../components/Messenger/Messenger";
+import TodoList from "../components/TodoList/TodoList";
 import UserContext from "../contexts/UserContext";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
               <WeatherWidget />
               <NewsCard />
               <Messenger />
+              <TodoList />
             </div>
           </>
         ) : (

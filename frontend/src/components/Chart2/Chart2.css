@@ -1,9 +1,11 @@
 .chart2-container {
   width: 32vw;
-  background-color: var(--light-color);
+  background-color: rgba(53, 53, 53, 0.584);
+  color: white;
+  backdrop-filter: blur(5px);
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
-  border: 1px solid var(--dark-color);
+  border: 4px solid var(--light-color);
   margin-bottom: 1rem;
 }
 
@@ -12,12 +14,13 @@
 }
 
 .chart2-container p {
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .chart2-container:hover {
-  border: 1px solid var(--main-bg-color);
+  border: 4px solid var(--second-color);
 }
 
 @media screen and (max-width: 600px) {

@@ -1,6 +1,6 @@
 /* --------------------------------------------------- General */
 
-.Users {
+.Messenger .Users {
   background-color: #212121;
   padding: 10px;
   display: grid;
@@ -8,49 +8,48 @@
   font-weight: bold;
   max-height: 515px;
   overflow-y: auto;
+  width: 250px;
+  border-radius: 20px 0 0 20px;
+  border: 4px solid var(--light-color);
 }
 
-ol li {
+.Messenger ol li {
   margin-bottom: 8px;
 }
 
-.Users li {
+.Messenger .Users li {
   display: flex;
   align-items: center;
   padding: 6px;
   border-radius: 15px;
 }
 
-.Users li:hover {
-  background-color: darkorange;
+.Messenger .Users li:hover {
+  background-color: blue;
   cursor: pointer;
 }
 
-img.avatar {
+.Messenger img.avatar {
   height: 30px;
   width: 30px;
   border-radius: 50%;
 }
 
-.username-online,
-.username-offline {
+.Messenger .username-online,
+.Messenger .username-offline {
   margin-left: 10px;
   color: white;
 }
 
-/*.username-online:hover, .username-offline:hover {*/
-/*	color: deeppink;*/
-/*}*/
-
-.username-online {
+.Messenger .username-online {
   color: white;
 }
 
-.username-offline {
+.Messenger .username-offline {
   color: dimgray;
 }
 
-.status-online {
+.Messenger .status-online {
   height: 8px;
   width: 8px;
   border-radius: 50%;
@@ -58,7 +57,7 @@ img.avatar {
   background-color: green;
 }
 
-.status-offline {
+.Messenger .status-offline {
   height: 8px;
   width: 8px;
   border-radius: 50%;
@@ -66,17 +65,17 @@ img.avatar {
   background-color: dimgray;
 }
 
-.name-status-container {
+.Messenger .name-status-container {
   display: flex;
   align-items: center;
 }
 
-.name-status-container.hide {
+.Messenger .name-status-container.hide {
   display: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .Users {
-    display: none;
+  .Messenger .Users {
+    width: 250px;
   }
 }

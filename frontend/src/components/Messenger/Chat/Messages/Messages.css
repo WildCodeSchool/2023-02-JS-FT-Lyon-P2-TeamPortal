@@ -16,13 +16,13 @@
   cursor: pointer;
 }
 
-.message-and-time {
+.Messenger .message-and-time {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.Messages li {
+.Messenger .Messages li {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -31,7 +31,7 @@
   margin-bottom: 15px;
 }
 
-.Messages li p.message {
+.Messenger .Messages li p.message {
   font-size: 1rem;
   background-color: rebeccapurple;
   padding: 10px;
@@ -41,7 +41,7 @@
   align-self: flex-start;
 }
 
-.time-and-date {
+.Messenger .Messages .time-and-date {
   font-size: 0.7rem;
   text-align: left;
   margin: 4px 15px;

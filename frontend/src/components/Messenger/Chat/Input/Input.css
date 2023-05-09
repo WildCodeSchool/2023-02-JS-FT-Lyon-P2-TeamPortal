@@ -1,4 +1,4 @@
-.Input {
+.Messenger .Input {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,21 +7,20 @@
   background-color: #333131;
 }
 
-input,
-button {
+.Messenger input button {
   height: 45px;
   font-size: 1rem;
   border-radius: 10px;
 }
 
-input {
+.Messenger input {
   width: 70%;
   padding: 15px 10px;
   border: none;
   outline: none;
 }
 
-button {
+.Messenger button {
   padding: 15px 8px;
   display: flex;
   align-items: center;
@@ -33,6 +32,6 @@ button {
   outline: none;
 }
 
-button:hover {
+.Messenger .Input button:hover {
   cursor: pointer;
 }
