@@ -14,13 +14,24 @@
   border: 1px solid var(--main-bg-color);
 }
 
+.login-form input {
+  width: 13rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
 .loginbox-title {
   padding: 1rem;
+  margin-top: 1rem;
 }
 
 .login-form {
   font-weight: bold;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .submit-btn {
@@ -58,7 +69,7 @@
   .loginbox-container {
     border: 1px solid var(--dark-color);
     border-radius: 1rem;
-    width: 80vw;
+    width: 100vw;
     height: 50vh;
     display: flex;
     flex-direction: column;

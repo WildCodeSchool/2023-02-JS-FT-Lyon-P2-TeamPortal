@@ -74,6 +74,7 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+    scrollbar-width: thin;
   }
 }
 
@@ -102,20 +103,43 @@ body {
   margin-left: 10rem;
 }
 .please-container {
+  margin-top: 10rem;
   display: flex;
   width: 100%;
   justify-content: space-around;
-  align-items: center;
 }
-.please {
-  color: var(--light-color);
-  margin-top: 10rem;
-  font-size: 2rem;
+.logout-btn {
+  background-color: #ffffff;
+  border: 1px solid var(--dark-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Koho", sans-serif;
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 1rem;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
   text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.submit-btn:hover {
+  border: 1px solid var(--main-bg-color);
+  color: rgb(86, 179, 86);
 }
 
 .home-container {
-  padding-top: 1rem;
   width: 100vw;
   height: 100vh;
   display: flex;

@@ -54,7 +54,7 @@ function NewsCard() {
             <h3 className="news-title">{news[newsIndex].title}</h3>
             <p className="news-description">{news[newsIndex].description}</p>
             <p>{news[newsIndex].content}</p>
-            <p className="news-author">Author: {news[newsIndex].author}</p>
+            <p className="news-author">Autheur: {news[newsIndex].author}</p>
             <p />
           </div>
           <div className="news-nav-container">
@@ -73,7 +73,7 @@ function NewsCard() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Read More
+                Lire Plus
               </a>
               <button
                 type="button"
