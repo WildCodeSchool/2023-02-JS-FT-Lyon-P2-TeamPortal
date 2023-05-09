@@ -1,8 +1,10 @@
 import "./Chart2.css";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
+import Chart from "chart.js/auto";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
+Chart.defaults.color = "#ffffff";
 
 const data = {
   labels: ["Dev", "Design", "Business"],
@@ -23,15 +25,6 @@ const data = {
       hoverOffset: 4,
     },
   ],
-  options: {
-    plugins: {
-      legend: {
-        labels: {
-          color: "white",
-        },
-      },
-    },
-  },
 };
 
 export default function Chart2() {
