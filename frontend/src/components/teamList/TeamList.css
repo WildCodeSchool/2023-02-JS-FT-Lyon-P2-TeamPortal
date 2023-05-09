@@ -147,7 +147,7 @@ body.active-modal {
 
 .modal-content {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
@@ -155,8 +155,8 @@ body.active-modal {
   border: solid white 4px;
   padding: 30px 28px;
   border-radius: 20px;
-  height: 75vh;
-  width: 75%;
+  
+  width: 85%;
   transition: all 1s ease;
   z-index: 2;
 }
@@ -186,14 +186,27 @@ body.active-modal {
 	.radio-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 15px 0 10px 0;
-   
+    align-items: start;
+    margin: 15px auto;
+    padding-left: 5rem;
     height: 180px;
     width: 80vw;
     
   }
-
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    background-color: #027aa9;
+    border: #ffffff solid 3px;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+  }
   .global-container {
     width: 90vw;
     display: flex;
@@ -206,11 +219,12 @@ body.active-modal {
     padding: 0;
   }
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 500px) {
 	.radio-container {
-    align-items: center;
+    align-items: start;
     text-align: center;
     display: flex;
+    padding-left: 3rem;
     justify-content: center;
     margin: 20px auto;
     
@@ -221,7 +235,9 @@ body.active-modal {
     display: flex;
     justify-content: center;
   }
-
+.modal-content {
+  width: 95%;
+}
   .great-team-members {
     width: inherit;
     

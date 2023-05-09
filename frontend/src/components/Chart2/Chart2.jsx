@@ -23,6 +23,15 @@ const data = {
       hoverOffset: 4,
     },
   ],
+  options: {
+    plugins: {
+      legend: {
+        labels: {
+          color: "white",
+        },
+      },
+    },
+  },
 };
 
 export default function Chart2() {
