@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: solid 1px var(--dark-color);
+  border: 4px solid var(--light-color);
   border-radius: 1rem;
   overflow: hidden;
   width: 32vw;
   height: 60vh;
-  background-color: transparent;
+  background-color: rgba(53, 53, 53, 0.584);
   backdrop-filter: blur(5px);
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
   margin-bottom: 1rem;
 }
 
 .news-card:hover {
-  border: 1px solid var(--main-bg-color);
+  border: 4px solid var(--second-color);
 }
 
 .image-container {

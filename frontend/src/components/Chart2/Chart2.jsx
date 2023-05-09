@@ -29,7 +29,7 @@ export default function Chart2() {
   return (
     <div className="chart2-container">
       <div className="chart2">
-        <p>Effectif des salariés au 1/05/23</p>
+        <p>Effectif des salariés au 10/05/23</p>
         <Doughnut data={data} />
       </div>
     </div>

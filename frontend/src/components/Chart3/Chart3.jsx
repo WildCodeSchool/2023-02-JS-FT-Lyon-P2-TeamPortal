@@ -61,7 +61,7 @@ export default function Chart3() {
     <div className="chart3-container">
       <div className="chart3">
         <p>Indicateurs de l'entreprise</p>
-        <Radar data={data} />;
+        <Radar data={data} />
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 .chart1-container {
-  background-color: var(--light-color);
+  background-color: rgba(53, 53, 53, 0.584);
   backdrop-filter: blur(5px);
-  border: solid 1px var(--dark-color);
+  color: white;
+  border: 4px solid var(--light-color);
   box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   width: 32vw;
@@ -9,17 +10,19 @@
 }
 
 .chart1-container:hover {
-  border: 1px solid var(--main-bg-color);
+  border: 4px solid var(--second-color);
 }
 
 .chart1 {
   width: 100%;
   height: 100%;
   padding: 1rem;
+  
 }
 
 .chart1 canvas {
   object-fit: cover;
+  
 }
 
 @media screen and (max-width: 600px) {

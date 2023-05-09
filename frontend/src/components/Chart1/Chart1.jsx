@@ -31,6 +31,7 @@ export const options = {
     title: {
       display: true,
       text: "Mon Activité Annuelle",
+      color: "white",
     },
   },
 };
