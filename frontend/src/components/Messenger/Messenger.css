@@ -1,9 +1,9 @@
 .Messenger {
   width: 32vw;
-  height: 515px;
+  height: 85vh;
   display: flex;
-  margin: 20px 0;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 600px) {

@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-label {
+.TeamList label {
   padding-left: 1rem;
 }
 
@@ -155,7 +155,7 @@ body.active-modal {
   border: solid white 4px;
   padding: 30px 28px;
   border-radius: 20px;
-  
+
   width: 85%;
   transition: all 1s ease;
   z-index: 2;
@@ -181,9 +181,8 @@ body.active-modal {
   scale: 1.1;
 }
 
-
 @media only screen and (max-width: 600px) {
-	.radio-container {
+  .radio-container {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -191,7 +190,6 @@ body.active-modal {
     padding-left: 5rem;
     height: 180px;
     width: 80vw;
-    
   }
   .close-modal {
     position: absolute;
@@ -219,15 +217,14 @@ body.active-modal {
     padding: 0;
   }
 }
-@media only screen and (max-width: 500px) {
-	.radio-container {
+@media only screen and (max-width: 600px) {
+  .radio-container {
     align-items: start;
     text-align: center;
     display: flex;
     padding-left: 3rem;
     justify-content: center;
     margin: 20px auto;
-    
   }
 
   .global-container {
@@ -235,12 +232,12 @@ body.active-modal {
     display: flex;
     justify-content: center;
   }
-.modal-content {
-  width: 95%;
-}
+  .modal-content {
+    width: 95%;
+  }
   .great-team-members {
     width: inherit;
-    
+
     margin: 0 0 100px 0;
     padding: 0;
   }

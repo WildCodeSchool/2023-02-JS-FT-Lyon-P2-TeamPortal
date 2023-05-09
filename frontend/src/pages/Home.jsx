@@ -24,18 +24,18 @@ export default function Home() {
               <Chart1 />
               <Chart3 />
               <Chart2 />
+              <TodoList />
             </div>
             <div className="right-home-container">
               <WeatherWidget />
               <NewsCard />
               <Messenger />
-              <TodoList />
             </div>
           </>
         ) : (
           <div className="please-container">
             <NavLink to="/">
-              <button type="submit" className="submit-btn">
+              <button type="submit" className="logout-btn">
                 Reconnexion
               </button>
             </NavLink>
