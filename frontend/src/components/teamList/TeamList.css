@@ -156,7 +156,7 @@ body.active-modal {
   padding: 30px 28px;
   border-radius: 20px;
   
-  width: 95%;
+  width: 85%;
   transition: all 1s ease;
   z-index: 2;
 }
@@ -219,7 +219,7 @@ body.active-modal {
     padding: 0;
   }
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 500px) {
 	.radio-container {
     align-items: start;
     text-align: center;
@@ -235,7 +235,9 @@ body.active-modal {
     display: flex;
     justify-content: center;
   }
-
+.modal-content {
+  width: 95%;
+}
   .great-team-members {
     width: inherit;
     

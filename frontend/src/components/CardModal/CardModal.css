@@ -5,7 +5,11 @@
   margin: 20px;
   color: rgb(173, 173, 173);
 }
-
+.img-modal {
+  height: 400px;
+  width: 400px;
+  border: solid red 3px;
+}
 .modal-box {
   width: 100%;
   padding: 30px;
@@ -23,7 +27,7 @@
   width: 400px;
   border-radius: 20px;
   border: rgb(255, 255, 255) solid 4px;
-  margin: 70px 0;
+  margin: 30px 0;
 }
 
 .job-title {
@@ -103,7 +107,8 @@
     padding: 5px;
   }
   .img-modal {
-    height: 100px;
+    height: 400px;
+    width: 400px;
     border: solid red 3px;
   }
   
@@ -118,16 +123,16 @@
   }
   
   .occupation-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 0px;
   }
   
   .base-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
   .mail-btn {
-    margin: 30px 0 0 0;
+    margin: 10px 0 0 0;
     width: 200px;
     height: 50px;
     background-color: rgb(11, 173, 242);
@@ -136,17 +141,5 @@
     text-transform: uppercase;
     transition: all 0.4s ease;
     border: solid black 4px;
-  }
-}
-
-
-@media only screen and (max-width: 700px ),(min-height: 500px) {
-
-  .modal-container img {
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-    border: rgb(247, 247, 247) solid 4px;
-    margin: 20px auto 0 auto;
   }
 }
