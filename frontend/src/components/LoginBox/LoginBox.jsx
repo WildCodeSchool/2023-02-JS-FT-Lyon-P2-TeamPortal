@@ -24,7 +24,7 @@ function LoginBox() {
     });
 
   const notifyError = () =>
-    toast.error("Invalid email or password", {
+    toast.error("Email ou Mot de Passe Érroné", {
       position: "bottom-center",
       autoClose: 5000,
       hideProgressBar: false,
