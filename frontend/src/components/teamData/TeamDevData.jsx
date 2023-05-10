@@ -7,7 +7,7 @@ function TeamDevData() {
       <h1>Team Dev</h1>
       <ul>
         <li>
-          <p>Effectif : 12</p>
+          <p>Effectif : 19</p>
         </li>
         <li>
           <p>Effectif / Total: 27%</p>

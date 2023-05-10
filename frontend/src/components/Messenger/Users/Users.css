@@ -1,5 +1,6 @@
 .Messenger .Users {
   background-color: #212121;
+  opacity: 80%;
   padding: 10px;
   display: grid;
   font-size: 0.8rem;
@@ -14,10 +15,6 @@
 
 .Users:hover {
   border: 2px solid var(--main-bg-color);
-}
-
-.Messenger ol li {
-  margin-bottom: 8px;
 }
 
 .Messenger .Users li {

@@ -1,5 +1,6 @@
 .Messenger .Chat {
   background-color: #181818;
+  opacity: 70%;
   display: grid;
   grid-template-rows: 1fr auto;
   padding: 15px;

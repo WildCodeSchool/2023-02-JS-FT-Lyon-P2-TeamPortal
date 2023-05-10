@@ -51,7 +51,7 @@ function Input({ setMessages, currentUser }) {
 Input.propTypes = {
   setMessages: PropTypes.func.isRequired,
   currentUser: PropTypes.shape({
-    uuid: PropTypes.string.isRequired,
+    uuid: PropTypes.number.isRequired,
     firstName: PropTypes.string.isRequired,
     lastName: PropTypes.string.isRequired,
     picture: PropTypes.string.isRequired,
