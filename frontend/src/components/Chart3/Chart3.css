@@ -29,7 +29,7 @@
 @media screen and (max-width: 600px) {
   .chart3-container {
     width: 100%;
-    height: 55vh;
+    height: 100%;
   }
   .chart3 {
     display: flex;

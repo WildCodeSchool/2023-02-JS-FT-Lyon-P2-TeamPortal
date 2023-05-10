@@ -110,7 +110,11 @@ NewsCard.propTypes = {
     urlToImage: PropTypes.string,
     description: PropTypes.string,
     content: PropTypes.string,
-  }).isRequired,
+  }),
+};
+
+NewsCard.defaultProps = {
+  news: null,
 };
 
 export default NewsCard;

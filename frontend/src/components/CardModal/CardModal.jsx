@@ -72,7 +72,7 @@ CardModal.propTypes = {
     }).isRequired,
     gender: PropTypes.string.isRequired,
     dob: PropTypes.shape({
-      age: PropTypes.number.isRequired,
+      age: PropTypes.string.isRequired,
     }).isRequired,
     registered: PropTypes.shape({
       age: PropTypes.string.isRequired,
