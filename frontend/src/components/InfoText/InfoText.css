@@ -3,7 +3,6 @@
   display: block;
   margin: 1rem;
   overflow: hidden;
-  border-radius: 1rem;
 }
 
 .infoText {
@@ -13,7 +12,7 @@
 }
 .infoText p span {
   color: var(--second-color);
-  padding-left: 5rem;
+  padding-left: 3rem;
 }
 
 @keyframes defilement {

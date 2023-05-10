@@ -14,9 +14,13 @@ export default function Teams() {
       {user ? (
         <TeamList />
       ) : (
-        <NavLink to="/">
-          <h2 className="please">Cliquer Ici pour Reconnexion</h2>
-        </NavLink>
+        <div className="please-container">
+          <NavLink to="/">
+            <button type="submit" className="logout-btn">
+              Reconnexion
+            </button>
+          </NavLink>
+        </div>
       )}
     </div>
   );

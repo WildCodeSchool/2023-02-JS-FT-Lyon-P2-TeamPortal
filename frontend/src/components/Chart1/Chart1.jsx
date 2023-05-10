@@ -31,11 +31,6 @@ export const options = {
         color: "white",
       },
     },
-    title: {
-      display: true,
-      text: "Mon Activité Annuelle",
-      color: "white",
-    },
     tooltip: {
       bodyColor: "white",
     },
@@ -91,6 +86,7 @@ function Chart1() {
   return (
     <div className="chart1-container">
       <div className="chart1">
+        <p>Activité Annuelle</p>
         <Line options={options} data={data} />
       </div>
     </div>
