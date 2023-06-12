@@ -79,7 +79,7 @@ select {
 }
 
 body {
-  background-image: url("./src/assets/background.svg");
+  background-image: url("/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
