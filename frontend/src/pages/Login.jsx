@@ -19,6 +19,9 @@ export default function Login() {
         <h1>
           Team<span id="header-title">Portal</span>
         </h1>
+        <p>
+          THIS IS A TEST APP : Please Login as guest@teamportal.com / pass123!
+        </p>
       </header>
       <div className="login-container">
         <div className="login-box">
