@@ -7,7 +7,7 @@ import ArrowNext from "../../assets/arrowNext";
 import "react-toastify/dist/ReactToastify.css";
 import "./NewsCard.css";
 
-const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+const GNEWS_API_KEY = import.meta.env.VITE_GNEWS_API_KEY;
 
 function NewsCard() {
   const notify = () => toast.error("Désolé! Aucune Info pour le moment");
@@ -15,7 +15,7 @@ function NewsCard() {
   const getNews = () => {
     axios
       .get(
-        `https://newsapi.org/v2/everything?apiKey=${NEWS_API_KEY}&language=en&q=web+development&sortBy=popularity`
+        `https://gnews.io/api/v4/top-headlines?category=general&lang=fr&country=fr&max=10&apikey=${GNEWS_API_KEY}`
       )
       .then((response) => {
         setNews(response.data.articles);
@@ -40,9 +40,9 @@ function NewsCard() {
       <div>
         <div className="news-card">
           <div className="image-container">
-            {news[newsIndex].urlToImage !== null ? (
+            {news[newsIndex].image !== null ? (
               <img
-                src={news[newsIndex].urlToImage}
+                src={news[newsIndex].image}
                 alt={news[newsIndex].title}
                 className="news-image"
               />
@@ -53,7 +53,7 @@ function NewsCard() {
           <div className="bottom-container">
             <h3 className="news-title">{news[newsIndex].title}</h3>
             <p className="news-content">{news[newsIndex].content}</p>
-            <p className="news-author">Auteur: {news[newsIndex].author}</p>
+            <p className="news-author">Source: {news[newsIndex].source.name}</p>
           </div>
           <div className="news-nav-container">
             <div className="news-nav">
@@ -106,8 +106,8 @@ function NewsCard() {
 NewsCard.propTypes = {
   news: PropTypes.shape({
     title: PropTypes.string,
-    author: PropTypes.string,
-    urlToImage: PropTypes.string,
+    source: PropTypes.shape({ name: PropTypes.string }),
+    image: PropTypes.string,
     description: PropTypes.string,
     content: PropTypes.string,
   }),
