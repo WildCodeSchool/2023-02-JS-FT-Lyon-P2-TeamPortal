@@ -5,6 +5,7 @@ import HomeIcon from "../../assets/homeIcon";
 import TeamsIcon from "../../assets/teamsIcon";
 import LibraryIcon from "../../assets/libraryIcon";
 import UserContext from "../../contexts/UserContext";
+import logo from "../../assets/teamportal-logo-title.png";
 
 import "./Navbar.css";
 
@@ -14,11 +15,7 @@ export default function Navbar() {
     <div className="navbar-container">
       <div className="nav">
         <div className="logo-container">
-          <img
-            src="../src/assets/teamportal-logo-title.png"
-            alt="logo"
-            className="logo"
-          />
+          <img src={logo} alt="logo" className="logo" />
         </div>
         <nav>
           <ul>
