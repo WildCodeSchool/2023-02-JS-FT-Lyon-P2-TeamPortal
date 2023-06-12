@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
+
 import "./WeatherWidget.css";
 
 export default function WeatherWidget() {
